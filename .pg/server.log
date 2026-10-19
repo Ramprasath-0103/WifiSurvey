@@ -1,0 +1,41 @@
+2026-10-18 22:22:53.604 IST [5308] LOG:  starting PostgreSQL 14.20 (Homebrew) on aarch64-apple-darwin24.6.0, compiled by Apple clang version 17.0.0 (clang-1700.4.4.1), 64-bit
+2026-10-18 22:22:53.606 IST [5308] LOG:  listening on IPv6 address "::1", port 5433
+2026-10-18 22:22:53.606 IST [5308] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-10-18 22:22:53.606 IST [5308] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5433"
+2026-10-18 22:22:53.613 IST [5309] LOG:  database system was interrupted; last known up at 2026-09-06 18:36:12 IST
+2026-10-18 22:22:53.722 IST [5309] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-10-18 22:22:53.724 IST [5309] LOG:  redo starts at 0/195EAF8
+2026-10-18 22:22:53.724 IST [5309] LOG:  invalid record length at 0/195EC18: wanted 24, got 0
+2026-10-18 22:22:53.724 IST [5309] LOG:  redo done at 0/195EBE0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-10-18 22:22:53.731 IST [5308] LOG:  database system is ready to accept connections
+2026-10-18 22:22:57.813 IST [5328] FATAL:  database "ram" does not exist
+2026-10-18 22:24:43.708 IST [5408] ERROR:  invalid input syntax for type uuid: "991bc94f-f5a0-4e35-9bde-b6bde0dfb6c0-afternoon" at character 80
+2026-10-18 22:24:43.708 IST [5408] STATEMENT:  
+	        INSERT INTO sessions (uuid, window_label, started_at)
+	        VALUES ('991bc94f-f5a0-4e35-9bde-b6bde0dfb6c0-afternoon', 'afternoon', '2026-10-18T13:05:00+05:30')
+	        ON CONFLICT (uuid) DO UPDATE SET window_label = EXCLUDED.window_label
+	        RETURNING id
+	    
+2026-10-18 22:37:59.460 IST [5308] LOG:  received fast shutdown request
+2026-10-18 22:37:59.460 IST [5308] LOG:  aborting any active transactions
+2026-10-18 22:37:59.462 IST [5308] LOG:  background worker "logical replication launcher" (PID 5315) exited with exit code 1
+2026-10-18 22:37:59.462 IST [5310] LOG:  shutting down
+2026-10-18 22:37:59.470 IST [5308] LOG:  database system is shut down
+2026-10-18 22:38:51.471 IST [6096] LOG:  starting PostgreSQL 14.20 (Homebrew) on aarch64-apple-darwin24.6.0, compiled by Apple clang version 17.0.0 (clang-1700.4.4.1), 64-bit
+2026-10-18 22:38:51.473 IST [6096] LOG:  listening on IPv6 address "::1", port 5433
+2026-10-18 22:38:51.473 IST [6096] LOG:  listening on IPv4 address "127.0.0.1", port 5433
+2026-10-18 22:38:51.473 IST [6096] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5433"
+2026-10-18 22:38:51.480 IST [6097] LOG:  database system was shut down at 2026-10-18 22:37:59 IST
+2026-10-18 22:38:51.489 IST [6096] LOG:  database system is ready to accept connections
+2026-10-18 22:46:11.215 IST [10011] FATAL:  database "ram" does not exist
+2026-10-19 21:38:59.855 IST [27645] ERROR:  column m.channel_util_pct does not exist at character 158
+2026-10-19 21:38:59.855 IST [27645] HINT:  Perhaps you meant to reference the column "b.channel_util_pct".
+2026-10-19 21:38:59.855 IST [27645] STATEMENT:  
+	SELECT p.label, s.window_label, m.band, m.channel, m.rssi_dbm, m.bssid,
+	       round(m.dl_mbps::numeric,1) dl, round(m.ul_mbps::numeric,1) ul,
+	       round(m.channel_util_pct,0) util, round(m.latency_ratio,1) ratio
+	FROM measurements m
+	JOIN reference_points p ON p.id=m.ref_point_id
+	JOIN sessions s ON s.id=m.session_id
+	LEFT JOIN bss_load b ON b.measurement_id=m.id AND b.phase='pre'
+	ORDER BY p.label, s.window_label;

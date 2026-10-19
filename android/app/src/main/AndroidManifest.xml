@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Required to call getScanResults() when targeting API 29+. -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- needed for ConnectivityManager.getLinkProperties(), which is how the
+         default gateway is found on modern Android -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- startScan() needs this. -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- API 33+: replaces the location requirement for Wi-Fi scanning. -->
+    <uses-permission
+        android:name="android.permission.NEARBY_WIFI_DEVICES"
+        android:usesPermissionFlags="neverForLocation"
+        tools:targetApi="33"
+        xmlns:tools="http://schemas.android.com/tools" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:label="WiFi Survey"
+        android:supportsRtl="true"
+        android:theme="@android:style/Theme.Material.Light">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

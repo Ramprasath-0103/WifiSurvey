@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wi-Fi Survey Results</title>
+<style>
+  :root{
+    --bg:#f7f6f3; --panel:#fff; --ink:#191917; --muted:#6f6d67; --line:#e3e1db;
+    --good:#1b6b47; --mid:#c98a2b; --bad:#a3352b; --accent:#8a4b26;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:14.5px/1.6 ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+  header{background:var(--panel);border-bottom:1px solid var(--line);padding:18px 28px}
+  h1{margin:0;font-size:19px;font-weight:660;letter-spacing:-.015em}
+  .sub{color:var(--muted);font-size:13px;margin-top:3px}
+  .banner{background:#fdf3e3;border:1px solid #e8c88a;color:#7a5410;
+          padding:9px 14px;border-radius:7px;margin-top:12px;font-size:13px}
+  main{padding:24px 28px 60px;max-width:1500px;margin:0 auto}
+  section{background:var(--panel);border:1px solid var(--line);border-radius:10px;
+          padding:20px 22px;margin-bottom:20px}
+  h2{font-size:15.5px;margin:0 0 4px;font-weight:650}
+  .note{color:var(--muted);font-size:13px;margin:0 0 16px}
+  .controls{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+  button.tab{font:inherit;font-size:13px;padding:6px 13px;border:1px solid var(--line);
+             background:#fff;border-radius:999px;cursor:pointer;color:var(--ink)}
+  button.tab:hover{background:#f1efe9}
+  button.tab.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+  select{font:inherit;font-size:13px;padding:6px 10px;border:1px solid var(--line);
+         border-radius:7px;background:#fff}
+  .pair{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+  @media(max-width:1100px){.pair{grid-template-columns:1fr}}
+  .gridwrap{text-align:center}
+  .gtitle{font-weight:650;font-size:14px;margin-bottom:2px}
+  .gsub{color:var(--muted);font-size:12.5px;margin-bottom:12px}
+  table.grid{border-collapse:separate;border-spacing:3px;margin:0 auto}
+  table.grid th{font-size:10.5px;color:var(--muted);font-weight:550;padding:0 0 3px}
+  table.grid th.rh{padding-right:7px;text-align:right}
+  td.cell{width:50px;height:46px;border-radius:5px;background:#f2f1ec;
+          border:1px solid #e8e6e0;vertical-align:middle;text-align:center;
+          font-size:10.5px;line-height:1.25;color:#fff;font-weight:600;position:relative}
+  td.cell.empty{background:#faf9f6;border-style:dashed;border-color:#eceae4}
+  td.cell b{display:block;font-size:11px}
+  td.cell span{display:block;font-weight:500;font-size:10px;opacity:.95}
+  .legend{display:flex;gap:4px;align-items:center;justify-content:center;
+          margin-top:12px;font-size:11.5px;color:var(--muted)}
+  .sw{width:26px;height:11px;border-radius:2px;display:inline-block}
+  table.data{width:100%;border-collapse:collapse;font-size:13px}
+  table.data th{text-align:left;font-weight:600;color:var(--muted);font-size:11.5px;
+                text-transform:uppercase;letter-spacing:.04em;padding:7px 8px;
+                border-bottom:1.5px solid var(--line)}
+  table.data td{padding:7px 8px;border-bottom:1px solid #f1efe9}
+  table.data tr:hover td{background:#faf9f6}
+  .num{text-align:right;font-variant-numeric:tabular-nums}
+  .pill{display:inline-block;padding:2px 9px;border-radius:999px;font-size:11.5px;font-weight:600;color:#fff}
+  .cap{background:var(--bad)} .cov{background:var(--accent)}
+  .mix{background:var(--mid)} .unc{background:var(--good)}
+  .strong{color:var(--bad);font-weight:650}
+  .dim{color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <h1>Indoor Wi-Fi Quality Survey</h1>
+  <div class="sub" id="sub"></div>
+  <div class="banner" id="banner" style="display:none"></div>
+  <div class="banner" id="mediumNote" style="display:none;background:#eef3f7;border-color:#9bb6cc;color:#2c4a63"></div>
+</header>
+
+<main>
+  <section>
+    <h2>Signal strength next to actual speed</h2>
+    <p class="note">The same floor, coloured two different ways. Where the two maps
+       disagree, signal strength is not what is holding the point back.</p>
+    <div class="controls">
+      <span class="dim" style="font-size:12.5px">Time of day:</span>
+      <span id="winTabs"></span>
+    </div>
+    <div class="pair">
+      <div class="gridwrap">
+        <div class="gtitle">Signal strength</div>
+        <div class="gsub">RSSI in dBm, closer to zero is stronger</div>
+        <div id="gridRssi"></div>
+        <div class="legend" id="legRssi"></div>
+      </div>
+      <div class="gridwrap">
+        <div class="gtitle">Measured download speed</div>
+        <div class="gsub">Mbps, what a user would actually get</div>
+        <div id="gridDl"></div>
+        <div class="legend" id="legDl"></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What is wrong at each point</h2>
+    <p class="note" id="catNote">Signal strength on one axis, how busy the channel is on the
+       other. Switch the time of day above and watch points change category.</p>
+    <div class="gridwrap"><div id="gridCat"></div>
+      <div class="legend">
+        <span class="pill unc">unconstrained</span>
+        <span class="pill mix">mixed</span>
+        <span class="pill cov">coverage limited</span>
+        <span class="pill cap">capacity limited</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Any metric, any time</h2>
+    <div class="controls">
+      <select id="metric"></select>
+      <span class="dim" style="font-size:12.5px">shown for the window selected above</span>
+    </div>
+    <div class="gridwrap"><div id="gridAny"></div><div class="legend" id="legAny"></div></div>
+  </section>
+
+  <section>
+    <h2>Same spot, different time of day</h2>
+    <p class="note">Walls do not move between the morning and the evening. Where the speed
+       falls but the signal does not, the channel being busy is the only explanation left.</p>
+    <table class="data" id="tod"></table>
+  </section>
+
+  <section>
+    <h2>Worst points, with a diagnosis</h2>
+    <table class="data" id="worst"></table>
+  </section>
+
+  <section>
+    <h2>Correlations</h2>
+    <p class="note">Pearson alongside Spearman, with n stated. With this few points the
+       confidence intervals are wide, which is worth saying out loud rather than hiding.</p>
+    <table class="data" id="corr"></table>
+  </section>
+
+  <section>
+    <h2>Control measurement per session</h2>
+    <p class="note">The same strong-signal point measured at the start of every session.
+       If this moves, the campus uplink was having a bad day and the survey points
+       should not be blamed for it.</p>
+    <table class="data" id="ctrl"></table>
+  </section>
+</main>
+
+<script>/*__RESULTS__*/</script>
+<script>
+const R = window.RESULTS;
+const $ = id => document.getElementById(id);
+const ROWL = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let WIN = "all";
+
+const MEDIUM = R.medium_column || "channel_util_pct";
+const MEDIUM_IS_RATIO = (R.medium_source === "latency_ratio");
+const MEDIUM_LABEL = MEDIUM_IS_RATIO ? "Loaded / idle ratio" : "Channel in use";
+const MEDIUM_UNIT  = MEDIUM_IS_RATIO ? "x" : "%";
+const CATCLASS = {capacity_limited:"cap", coverage_limited:"cov", mixed:"mix", unconstrained:"unc"};
+const CATLABEL = {capacity_limited:"capacity", coverage_limited:"coverage", mixed:"mixed", unconstrained:"ok"};
+
+const METRICS = [
+  ["dl_mbps","Download speed","Mbps",false,1],
+  ["ul_mbps","Upload speed","Mbps",false,1],
+  ["rssi_dbm","Signal strength","dBm",false,0],
+  ["loaded_latency_ms","Latency under load","ms",true,0],
+  ["idle_latency_ms","Latency when idle","ms",true,0],
+  ["latency_ratio","Loaded / idle ratio","x",true,1],
+  ["jitter_ms","Jitter","ms",true,1],
+  ["packet_loss_pct","Packet loss","%",true,1],
+  [MEDIUM, MEDIUM_LABEL, MEDIUM_UNIT, true, MEDIUM_IS_RATIO?1:0],
+  ["station_count","Devices on the AP","",true,0],
+  ["cochannel_count","APs on our channel","",true,0],
+  ["quality_score","Quality score","",false,0]
+];
+
+/* ---------- data access ---------- */
+function rows(){
+  if (WIN === "all") return R.points;
+  const byLabel = {};
+  R.points.forEach(p => byLabel[p.label] = p);
+  return R.per_window.filter(p => p.window_label === WIN)
+    .map(p => Object.assign({}, byLabel[p.label] || {}, p));
+}
+
+/* ---------- colour ---------- */
+function ramp(t){                       // 0 = bad (red) .. 1 = good (green)
+  t = Math.max(0, Math.min(1, t));
+  const stops = [[163,53,43],[201,138,43],[27,107,71]];
+  const i = t < .5 ? 0 : 1, f = t < .5 ? t*2 : (t-.5)*2;
+  const a = stops[i], b = stops[i+1];
+  return `rgb(${Math.round(a[0]+(b[0]-a[0])*f)},${Math.round(a[1]+(b[1]-a[1])*f)},${Math.round(a[2]+(b[2]-a[2])*f)})`;
+}
+
+function drawGrid(el, data, key, invert, dp, unit){
+  const vals = data.map(d => d[key]).filter(v => v !== null && v !== undefined);
+  if(!vals.length){ el.innerHTML = '<p class="dim">no data</p>'; return [null,null]; }
+  const lo = Math.min(...vals), hi = Math.max(...vals);
+  const at = {};
+  data.forEach(d => { if(d.grid_row) at[d.grid_row + d.grid_col] = d; });
+
+  let h = "<table class='grid'><thead><tr><th class='rh'></th>";
+  for(let c=1;c<=R.grid.cols;c++) h += `<th>${c}</th>`;
+  h += "</tr></thead><tbody>";
+  for(let r=0;r<R.grid.rows;r++){
+    const L = ROWL[r];
+    h += `<tr><th class='rh'>${L}</th>`;
+    for(let c=1;c<=R.grid.cols;c++){
+      const d = at[L+c];
+      if(!d || d[key]===null || d[key]===undefined){ h += `<td class="cell empty"></td>`; continue; }
+      let t = hi===lo ? .5 : (d[key]-lo)/(hi-lo);
+      if(invert) t = 1-t;
+      h += `<td class="cell" style="background:${ramp(t)}" title="${d.label} — ${d.place_name||''}\n${key}: ${d[key]}">`
+         + `<b>${d.label}</b><span>${Number(d[key]).toFixed(dp)}</span></td>`;
+    }
+    h += "</tr>";
+  }
+  el.innerHTML = h + "</tbody></table>";
+  return [lo, hi];
+}
+
+function legend(el, lo, hi, unit, invert, dp){
+  if(lo===null){ el.innerHTML=""; return; }
+  const a = invert ? hi : lo, b = invert ? lo : hi;
+  let sw = "";
+  for(let i=0;i<=10;i++) sw += `<span class="sw" style="background:${ramp(i/10)}"></span>`;
+  el.innerHTML = `<span>${Number(a).toFixed(dp)}${unit}</span>${sw}<span>${Number(b).toFixed(dp)}${unit}</span>`;
+}
+
+function drawCategories(){
+  const data = rows();
+  const at = {};
+  data.forEach(d => { if(d.grid_row) at[d.grid_row + d.grid_col] = d; });
+  const colour = {capacity_limited:"#a3352b", coverage_limited:"#8a4b26",
+                  mixed:"#c98a2b", unconstrained:"#1b6b47"};
+  let h = "<table class='grid'><thead><tr><th class='rh'></th>";
+  for(let c=1;c<=R.grid.cols;c++) h += `<th>${c}</th>`;
+  h += "</tr></thead><tbody>";
+  for(let r=0;r<R.grid.rows;r++){
+    const L = ROWL[r];
+    h += `<tr><th class='rh'>${L}</th>`;
+    for(let c=1;c<=R.grid.cols;c++){
+      const d = at[L+c];
+      const cat = d && (WIN==="all" ? d.peak_category : d.category);
+      if(!d || !cat){ h += `<td class="cell empty"></td>`; continue; }
+      h += `<td class="cell" style="background:${colour[cat]}" title="${d.label} — ${d.primary_cause||''}">`
+         + `<b>${d.label}</b><span>${CATLABEL[cat]}</span></td>`;
+    }
+    h += "</tr>";
+  }
+  $("gridCat").innerHTML = h + "</tbody></table>";
+}
+
+/* ---------- tables ---------- */
+function tableHTML(cols, data, cellFn){
+  let h = "<thead><tr>" + cols.map(c=>`<th${c[2]?' class="num"':''}>${c[1]}</th>`).join("") + "</tr></thead><tbody>";
+  data.forEach(d => {
+    h += "<tr>" + cols.map(c=>`<td${c[2]?' class="num"':''}>${cellFn(d,c[0])}</td>`).join("") + "</tr>";
+  });
+  return h + "</tbody>";
+}
+
+function drawTod(){
+  const d = R.time_of_day || [];
+  $("tod").innerHTML = tableHTML([
+    ["label","Point",0],["best","Best",0],["worst","Worst",0],
+    ["drop_pct","Speed drop",1],["rssi_change_db","Signal moved",1],
+    ["medium_change", MEDIUM_IS_RATIO ? "Queueing rose" : "Channel use rose",1],["verdict","",0]
+  ], d, (r,k)=>{
+    switch(k){
+      case "label": return `<b>${r.label}</b>`;
+      case "best":  return `${r.best_dl} Mbps <span class="dim">${r.best_window}</span>`;
+      case "worst": return `${r.worst_dl} Mbps <span class="dim">${r.worst_window}</span>`;
+      case "drop_pct": return (r.drop_pct>40?'<span class="strong">':'<span>')+r.drop_pct+"%</span>";
+      case "rssi_change_db": return r.rssi_change_db+" dB";
+      case "medium_change": {
+        const v = MEDIUM_IS_RATIO ? r.ratio_change : r.util_change_pct;
+        if(v===null||v===undefined) return "—";
+        return (v>0?"+":"") + v + (MEDIUM_IS_RATIO?"x":"%");
+      }
+      case "verdict": return r.signal_stable && r.drop_pct>20
+        ? '<span class="strong">signal unchanged, so this is congestion</span>'
+        : '<span class="dim">—</span>';
+    }
+  });
+}
+
+function drawWorst(){
+  const d = [...R.points].sort((a,b)=>a.quality_score-b.quality_score);
+  $("worst").innerHTML = tableHTML([
+    ["label","Point",0],["place_name","Where",0],["quality_score","Score",1],
+    ["rssi_dbm","RSSI",1],[MEDIUM,MEDIUM_LABEL,1],["dl_mbps","Download",1],
+    ["peak_category","Diagnosis",0],["recommendation","What to do",0]
+  ], d, (r,k)=>{
+    if(k==="label") return `<b>${r.label}</b>`;
+    if(k==="peak_category") return `<span class="pill ${CATCLASS[r.peak_category]}">${CATLABEL[r.peak_category]}</span>`;
+    if(k==="recommendation") return `<span class="dim">${r.recommendation||""}</span>`;
+    if(k==="place_name") return `<span class="dim">${r.place_name||""}</span>`;
+    const v = r[k];
+    if(v===null||v===undefined) return "—";
+    return k==="rssi_dbm" ? Math.round(v)+" dBm"
+         : k==="channel_util_pct" ? Math.round(v)+"%"
+         : k==="latency_ratio" ? v.toFixed(1)+"x"
+         : k==="dl_mbps" ? v.toFixed(1)+" Mbps" : Number(v).toFixed(1);
+  });
+}
+
+function drawCorr(){
+  const names = {rssi_dbm:"Signal strength", channel_util_pct:"Channel in use",
+    latency_ratio:"Loaded/idle ratio",
+    station_count:"Devices on AP", cochannel_count:"APs on our channel",
+    tx_link_speed_mbps:"Link rate", dl_mbps:"Download", ul_mbps:"Upload",
+    loaded_latency_ms:"Latency under load", latency_ratio:"Loaded/idle ratio",
+    jitter_ms:"Jitter", packet_loss_pct:"Packet loss"};
+  const d = [...R.correlations].sort((a,b)=>Math.abs(b.pearson_r)-Math.abs(a.pearson_r)).slice(0,14);
+  $("corr").innerHTML = tableHTML([
+    ["indicator","Indicator",0],["outcome","Against",0],
+    ["pearson_r","Pearson r",1],["spearman_r","Spearman r",1],
+    ["pearson_p","p",1],["n","n",1]
+  ], d, (r,k)=>{
+    if(k==="indicator"||k==="outcome") return names[r[k]]||r[k];
+    if(k==="pearson_p") return r.pearson_p<0.001?"<0.001":r.pearson_p.toFixed(3);
+    if(k==="pearson_r"||k==="spearman_r"){
+      const v=r[k]; return (Math.abs(v)>0.6?'<span class="strong">':'<span>')+v.toFixed(3)+"</span>";
+    }
+    return r[k];
+  });
+}
+
+function drawCtrl(){
+  $("ctrl").innerHTML = tableHTML([
+    ["window_label","Session",0],["control_dl_mbps","Control download",1],
+    ["control_rssi_dbm","Control RSSI",1]
+  ], R.controls||[], (r,k)=>{
+    if(k==="window_label") return r[k];
+    if(r[k]===null||r[k]===undefined) return "—";
+    return k==="control_dl_mbps" ? Number(r[k]).toFixed(1)+" Mbps" : r[k]+" dBm";
+  });
+}
+
+/* ---------- render ---------- */
+function renderMaps(){
+  const data = rows();
+  let [lo,hi] = drawGrid($("gridRssi"), data, "rssi_dbm", false, 0);
+  legend($("legRssi"), lo, hi, " dBm", false, 0);
+  [lo,hi] = drawGrid($("gridDl"), data, "dl_mbps", false, 1);
+  legend($("legDl"), lo, hi, "", false, 1);
+  drawCategories();
+  renderAny();
+}
+function renderAny(){
+  const m = METRICS.find(x=>x[0]===$("metric").value) || METRICS[0];
+  const [lo,hi] = drawGrid($("gridAny"), rows(), m[0], m[3], m[4]);
+  legend($("legAny"), lo, hi, m[2]?(" "+m[2]):"", m[3], m[4]);
+}
+
+(function init(){
+  $("sub").textContent =
+    `${R.counts.measurements} measurements · ${R.counts.points} points · ` +
+    `${R.counts.windows} time windows · generated ${R.generated_at.replace("T"," ")}`;
+  if(R.sample_data){
+    $("banner").style.display = "block";
+    $("banner").innerHTML = "<b>Sample data.</b> These numbers were generated by " +
+      "scripts/make_demo_data.py so the pipeline could be built and shown before the " +
+      "real walk. Replace with a real export and every chart below redraws from it.";
+  }
+  if(MEDIUM_IS_RATIO){
+    $("mediumNote").style.display = "block";
+    $("mediumNote").innerHTML = "<b>No access point here advertises BSS Load.</b> " +
+      "Channel utilisation is therefore unavailable, so the medium indicator is the " +
+      "<b>loaded / idle latency ratio</b> instead: how much delay builds up when the link " +
+      "is saturated. Queueing rises sharply on a contended channel, so it separates " +
+      "congestion from weak coverage without needing anything from the beacon. " +
+      "Thresholds: under 3x light, 3 to 5x moderate, over 5x contended.";
+    $("catNote").innerHTML = "Signal strength on one axis, queueing delay under load on the " +
+      "other. Switch the time of day above and watch points change category.";
+  }
+  $("winTabs").innerHTML = ["all",...R.windows]
+    .map(w=>`<button class="tab${w==='all'?' on':''}" data-w="${w}">${w==='all'?'all day':w}</button>`).join(" ");
+  $("winTabs").querySelectorAll("button").forEach(b=>{
+    b.onclick = () => {
+      WIN = b.dataset.w;
+      $("winTabs").querySelectorAll("button").forEach(x=>x.classList.toggle("on", x===b));
+      renderMaps();
+    };
+  });
+  // the medium metric can collide with a fixed one when the fallback is active
+  const seenMetric = new Set();
+  $("metric").innerHTML = METRICS
+    .filter(m => !seenMetric.has(m[0]) && seenMetric.add(m[0]))
+    .map(m=>`<option value="${m[0]}">${m[1]}</option>`).join("");
+  $("metric").value = "quality_score";
+  $("metric").onchange = renderAny;
+
+  renderMaps(); drawTod(); drawWorst(); drawCorr(); drawCtrl();
+})();
+</script>
+</body>
+</html>

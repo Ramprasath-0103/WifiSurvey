@@ -1,0 +1,4461 @@
+{
+  "exported_at": "2026-10-19T18:07:01+05:30",
+  "measurement_count": 15,
+  "measurements": [
+    {
+      "uuid": "8ae17758-5619-4fa2-a905-5096964190d6",
+      "session_uuid": "bfdbf6ea-0bf1-4e36-8a27-07364b39e8e2",
+      "window_label": "evening",
+      "point_label": "C5",
+      "repetition": 1,
+      "taken_at": "2026-10-18T22:14:00+05:30",
+      "is_control": true,
+      "frequency_mhz": 2422,
+      "channel": 3,
+      "band": "2.4",
+      "rssi_dbm": -70,
+      "tx_link_speed_mbps": 86,
+      "rx_link_speed_mbps": 86,
+      "ul_mbps": 3.90238919582566,
+      "dl_target_host": "speed.cloudflare.com",
+      "idle_latency_ms": 174,
+      "idle_latency_p95_ms": 1539,
+      "loaded_latency_ms": 2.13,
+      "recovery_latency_ms": 3.32,
+      "jitter_ms": 538.359,
+      "packet_loss_pct": 14,
+      "gateway_ip": "172.16.64.1",
+      "latency_method": "icmp",
+      "neighbours": [
+        {
+          "bssid": "d4:68:4d:18:a9:c8",
+          "ssid": "E-VIT",
+          "channel": 5,
+          "frequency_mhz": 2432,
+          "rssi_dbm": -50,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 5,
+            "channel_util_255": 78,
+            "channel_util_pct": 30.59,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "84:18:3a:0c:9b:78",
+          "ssid": "E-VIT",
+          "channel": 13,
+          "frequency_mhz": 2472,
+          "rssi_dbm": -56,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:18:a9:cc",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -68,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "f0:b0:52:28:b4:68",
+          "ssid": "E-VIT",
+          "channel": 13,
+          "frequency_mhz": 2472,
+          "rssi_dbm": -68,
+          "is_serving": false
+        },
+        {
+          "bssid": "b4:c7:99:04:2b:f0",
+          "ssid": "G-VIT",
+          "channel": 11,
+          "frequency_mhz": 2462,
+          "rssi_dbm": -72,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 3,
+            "channel_util_255": 38,
+            "channel_util_pct": 14.9,
+            "admission_capacity": 31250
+          }
+        },
+        {
+          "bssid": "f0:b0:52:28:36:88",
+          "ssid": "E-VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -74,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:9b:7c",
+          "ssid": "E-VIT",
+          "channel": 40,
+          "frequency_mhz": 5200,
+          "rssi_dbm": -80,
+          "is_serving": false
+        },
+        {
+          "bssid": "2c:c5:d3:04:60:18",
+          "ssid": "G-VIT",
+          "channel": 10,
+          "frequency_mhz": 2457,
+          "rssi_dbm": -80,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 2,
+            "channel_util_255": 109,
+            "channel_util_pct": 42.75,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "84:18:3a:0c:8f:fc",
+          "ssid": "E-VIT",
+          "channel": 40,
+          "frequency_mhz": 5200,
+          "rssi_dbm": -89,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 6,
+            "channel_util_pct": 2.35,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:13:8c",
+          "ssid": "E-VIT",
+          "channel": 64,
+          "frequency_mhz": 5320,
+          "rssi_dbm": -90,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 5,
+            "channel_util_255": 40,
+            "channel_util_pct": 15.69,
+            "admission_capacity": 0
+          }
+        }
+      ],
+      "device_model": "OnePlus GM1901",
+      "android_sdk": 31,
+      "note": "download: UnknownHostException: Unable to resolve host \"speed.cloudflare.com\": No address associated with hostname"
+    },
+    {
+      "uuid": "4000a462-218f-47f2-92b8-55d6db5fed07",
+      "session_uuid": "7cc53b79-b5bd-41a4-af9a-c8e152c9b583",
+      "window_label": "morning",
+      "point_label": "C5",
+      "repetition": 1,
+      "taken_at": "2026-10-19T11:52:34+05:30",
+      "is_control": true,
+      "frequency_mhz": -1,
+      "channel": -1,
+      "rssi_dbm": -127,
+      "tx_link_speed_mbps": -1,
+      "rx_link_speed_mbps": -1,
+      "dl_mbps": 25.57872832722833,
+      "ul_mbps": 6.82021841080454,
+      "dl_target_host": "speed.cloudflare.com",
+      "gateway_ip": "192.0.0.1",
+      "latency_method": "tcp_connect",
+      "neighbours": [],
+      "device_model": "OnePlus GM1901",
+      "android_sdk": 31
+    },
+    {
+      "uuid": "8443d0f4-275e-4d5b-80f5-ff4d5d3601b3",
+      "session_uuid": "aaeb9bb8-ea7f-4985-a89e-bb52b70fa9f8",
+      "window_label": "afternoon",
+      "point_label": "C5",
+      "repetition": 1,
+      "taken_at": "2026-10-19T12:05:24+05:30",
+      "is_control": true,
+      "ssid": "E-VIT",
+      "bssid": "d4:68:4d:18:a9:cc",
+      "frequency_mhz": 5845,
+      "channel": 169,
+      "band": "5",
+      "rssi_dbm": -68,
+      "tx_link_speed_mbps": 180,
+      "rx_link_speed_mbps": 180,
+      "dl_mbps": 3.6468750286281395,
+      "ul_mbps": 4.913990848708487,
+      "dl_target_host": "speed.cloudflare.com",
+      "idle_latency_ms": 9.01,
+      "idle_latency_p95_ms": 190,
+      "loaded_latency_ms": 305,
+      "recovery_latency_ms": 12.8,
+      "jitter_ms": 54.69,
+      "packet_loss_pct": 0,
+      "gateway_ip": "172.16.64.1",
+      "latency_method": "icmp",
+      "bss_load_pre": {
+        "station_count": 0,
+        "channel_util_255": 2,
+        "channel_util_pct": 0.78,
+        "admission_capacity": 0
+      },
+      "bss_load_post": {
+        "station_count": 5,
+        "channel_util_255": 117,
+        "channel_util_pct": 45.88,
+        "admission_capacity": 0
+      },
+      "neighbours": [
+        {
+          "bssid": "d4:68:4d:18:a9:c8",
+          "ssid": "E-VIT",
+          "channel": 5,
+          "frequency_mhz": 2432,
+          "rssi_dbm": -51,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 67,
+            "channel_util_pct": 26.27,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "84:18:3a:0c:9b:78",
+          "ssid": "E-VIT",
+          "channel": 13,
+          "frequency_mhz": 2472,
+          "rssi_dbm": -58,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:18:a9:cc",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -59,
+          "is_serving": true,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "f0:b0:52:28:b4:68",
+          "ssid": "E-VIT",
+          "channel": 3,
+          "frequency_mhz": 2422,
+          "rssi_dbm": -72,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:13:88",
+          "ssid": "E-VIT",
+          "channel": 10,
+          "frequency_mhz": 2457,
+          "rssi_dbm": -72,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 2,
+            "channel_util_255": 70,
+            "channel_util_pct": 27.45,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d8:0d:17:3e:50:de",
+          "ssid": "G-VIT",
+          "channel": 6,
+          "frequency_mhz": 2437,
+          "rssi_dbm": -77,
+          "is_serving": false
+        },
+        {
+          "bssid": "f0:b0:52:28:36:88",
+          "ssid": "E-VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -78,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:9b:7c",
+          "ssid": "E-VIT",
+          "channel": 40,
+          "frequency_mhz": 5200,
+          "rssi_dbm": -78,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:2d:08",
+          "ssid": "E-VIT",
+          "channel": 6,
+          "frequency_mhz": 2437,
+          "rssi_dbm": -81,
+          "is_serving": false
+        },
+        {
+          "bssid": "b2:6b:e0:bc:62:ac",
+          "ssid": "OnePlus Nord CE4",
+          "channel": 149,
+          "frequency_mhz": 5745,
+          "rssi_dbm": -83,
+          "is_serving": false
+        },
+        {
+          "bssid": "a2:6b:a1:bb:34:8c",
+          "ssid": "moto g54 5G_5904",
+          "channel": 48,
+          "frequency_mhz": 5240,
+          "rssi_dbm": -85,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:8f:fc",
+          "ssid": "E-VIT",
+          "channel": 40,
+          "frequency_mhz": 5200,
+          "rssi_dbm": -86,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "84:24:8d:22:0b:c0",
+          "ssid": "G-VIT",
+          "channel": 52,
+          "frequency_mhz": 5260,
+          "rssi_dbm": -86,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 150,
+            "channel_util_pct": 58.82,
+            "admission_capacity": 31250
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:13:8c",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -89,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "f0:b0:52:28:b4:6c",
+          "ssid": "E-VIT",
+          "channel": 36,
+          "frequency_mhz": 5180,
+          "rssi_dbm": -89,
+          "is_serving": false
+        }
+      ],
+      "device_model": "OnePlus GM1901",
+      "android_sdk": 31
+    },
+    {
+      "uuid": "08dc904e-80d6-41e9-98a7-9c7802a6dbc6",
+      "session_uuid": "aaeb9bb8-ea7f-4985-a89e-bb52b70fa9f8",
+      "window_label": "afternoon",
+      "point_label": "C1",
+      "repetition": 1,
+      "taken_at": "2026-10-19T12:07:38+05:30",
+      "is_control": false,
+      "ssid": "E-VIT",
+      "bssid": "d4:68:4d:1d:d9:28",
+      "frequency_mhz": 2412,
+      "channel": 1,
+      "band": "2.4",
+      "rssi_dbm": -71,
+      "tx_link_speed_mbps": 86,
+      "rx_link_speed_mbps": 86,
+      "dl_mbps": 0.7587083854818523,
+      "dl_target_host": "speed.cloudflare.com",
+      "idle_latency_ms": 702,
+      "idle_latency_p95_ms": 9093,
+      "loaded_latency_ms": 389,
+      "recovery_latency_ms": 530,
+      "jitter_ms": 3489.328,
+      "packet_loss_pct": 44,
+      "gateway_ip": "172.16.64.1",
+      "latency_method": "icmp",
+      "bss_load_pre": {
+        "station_count": 0,
+        "channel_util_255": 162,
+        "channel_util_pct": 63.53,
+        "admission_capacity": 0
+      },
+      "bss_load_post": {
+        "station_count": 2,
+        "channel_util_255": 123,
+        "channel_util_pct": 48.24,
+        "admission_capacity": 0
+      },
+      "neighbours": [
+        {
+          "bssid": "d4:68:4d:20:7a:38",
+          "ssid": "E-VIT",
+          "channel": 6,
+          "frequency_mhz": 2437,
+          "rssi_dbm": -60,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:1f:94:f8",
+          "ssid": "E-VIT",
+          "channel": 8,
+          "frequency_mhz": 2447,
+          "rssi_dbm": -63,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 4,
+            "channel_util_255": 99,
+            "channel_util_pct": 38.82,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "f0:b0:52:29:34:a8",
+          "ssid": "E-VIT",
+          "channel": 6,
+          "frequency_mhz": 2437,
+          "rssi_dbm": -65,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:8f:f8",
+          "ssid": "E-VIT",
+          "channel": 12,
+          "frequency_mhz": 2467,
+          "rssi_dbm": -68,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 84,
+            "channel_util_pct": 32.94,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:18:9b:48",
+          "ssid": "VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -69,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:58:9b:48",
+          "ssid": "E-VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -70,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:1d:d9:28",
+          "ssid": "E-VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -71,
+          "is_serving": true,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 162,
+            "channel_util_pct": 63.53,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:18:a9:c8",
+          "ssid": "E-VIT",
+          "channel": 5,
+          "frequency_mhz": 2432,
+          "rssi_dbm": -71,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 65,
+            "channel_util_pct": 25.49,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:1f:94:fc",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -72,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:19:48",
+          "ssid": "E-VIT",
+          "channel": 6,
+          "frequency_mhz": 2437,
+          "rssi_dbm": -73,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:07:28",
+          "ssid": "E-VIT",
+          "channel": 3,
+          "frequency_mhz": 2422,
+          "rssi_dbm": -74,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 39,
+            "channel_util_pct": 15.29,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "84:18:3a:0c:be:ac",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -76,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 7,
+            "channel_util_pct": 2.75,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:1f:97:fc",
+          "ssid": "E-VIT",
+          "channel": 157,
+          "frequency_mhz": 5785,
+          "rssi_dbm": -76,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 2,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "84:18:3a:0c:8f:fc",
+          "ssid": "E-VIT",
+          "channel": 40,
+          "frequency_mhz": 5200,
+          "rssi_dbm": -76,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 7,
+            "channel_util_pct": 2.75,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:2d:08",
+          "ssid": "E-VIT",
+          "channel": 6,
+          "frequency_mhz": 2437,
+          "rssi_dbm": -78,
+          "is_serving": false
+        },
+        {
+          "bssid": "2c:c5:d3:04:42:cc",
+          "ssid": "E-VIT",
+          "channel": 149,
+          "frequency_mhz": 5745,
+          "rssi_dbm": -79,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:07:2c",
+          "ssid": "E-VIT",
+          "channel": 52,
+          "frequency_mhz": 5260,
+          "rssi_dbm": -80,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 2,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "8c:b6:c5:16:ed:98",
+          "ssid": "JioAirfiberA6",
+          "channel": 36,
+          "frequency_mhz": 5180,
+          "rssi_dbm": -83,
+          "is_serving": false
+        },
+        {
+          "bssid": "2c:e6:cc:29:28:3c",
+          "ssid": "E-VIT",
+          "channel": 161,
+          "frequency_mhz": 5805,
+          "rssi_dbm": -83,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 1,
+            "channel_util_pct": 0.39,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "0a:40:cc:ca:b7:df",
+          "ssid": "Nothing Phone (2a) Plus_2094",
+          "channel": 149,
+          "frequency_mhz": 5745,
+          "rssi_dbm": -83,
+          "is_serving": false
+        },
+        {
+          "bssid": "2c:c5:d3:04:43:9c",
+          "ssid": "E-VIT",
+          "channel": 157,
+          "frequency_mhz": 5785,
+          "rssi_dbm": -84,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:16:ec",
+          "ssid": "E-VIT",
+          "channel": 64,
+          "frequency_mhz": 5320,
+          "rssi_dbm": -84,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:2b:ec",
+          "ssid": "E-VIT",
+          "channel": 44,
+          "frequency_mhz": 5220,
+          "rssi_dbm": -84,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:21:02:6c",
+          "ssid": "E-VIT",
+          "channel": 36,
+          "frequency_mhz": 5180,
+          "rssi_dbm": -84,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:1f:45:2c",
+          "ssid": "E-VIT",
+          "channel": 149,
+          "frequency_mhz": 5745,
+          "rssi_dbm": -86,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:19:4c",
+          "ssid": "E-VIT",
+          "channel": 36,
+          "frequency_mhz": 5180,
+          "rssi_dbm": -87,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:1f:08:fc",
+          "ssid": "E-VIT",
+          "channel": 56,
+          "frequency_mhz": 5280,
+          "rssi_dbm": -87,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 3,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:18:9b:4c",
+          "ssid": "E-VIT",
+          "channel": 36,
+          "frequency_mhz": 5180,
+          "rssi_dbm": -87,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:9b:7c",
+          "ssid": "E-VIT",
+          "channel": 40,
+          "frequency_mhz": 5200,
+          "rssi_dbm": -88,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:1d:d9:2c",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -89,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:2a:4c",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -90,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 3,
+            "channel_util_pct": 1.18,
+            "admission_capacity": 0
+          }
+        }
+      ],
+      "device_model": "OnePlus GM1901",
+      "android_sdk": 31,
+      "note": "upload: SocketTimeoutException: timeout"
+    },
+    {
+      "uuid": "b1f0d0bd-8e9b-402a-99ae-36d5d1a1bc07",
+      "session_uuid": "aaeb9bb8-ea7f-4985-a89e-bb52b70fa9f8",
+      "window_label": "afternoon",
+      "point_label": "A1",
+      "repetition": 1,
+      "taken_at": "2026-10-19T12:08:57+05:30",
+      "is_control": false,
+      "ssid": "E-VIT",
+      "bssid": "d4:68:4d:19:07:2c",
+      "frequency_mhz": 5260,
+      "channel": 52,
+      "band": "5",
+      "rssi_dbm": -68,
+      "tx_link_speed_mbps": 260,
+      "rx_link_speed_mbps": 260,
+      "dl_mbps": 19.241844417327638,
+      "ul_mbps": 12.6524364995531,
+      "dl_target_host": "speed.cloudflare.com",
+      "idle_latency_ms": 1.93,
+      "idle_latency_p95_ms": 35.6,
+      "loaded_latency_ms": 19.8,
+      "recovery_latency_ms": 1.53,
+      "jitter_ms": 10.79,
+      "packet_loss_pct": 0,
+      "gateway_ip": "172.16.64.1",
+      "latency_method": "icmp",
+      "bss_load_pre": {
+        "station_count": 2,
+        "channel_util_255": 2,
+        "channel_util_pct": 0.78,
+        "admission_capacity": 0
+      },
+      "bss_load_post": {
+        "station_count": 3,
+        "channel_util_255": 6,
+        "channel_util_pct": 2.35,
+        "admission_capacity": 0
+      },
+      "neighbours": [
+        {
+          "bssid": "d4:68:4d:20:7a:38",
+          "ssid": "E-VIT",
+          "channel": 6,
+          "frequency_mhz": 2437,
+          "rssi_dbm": -64,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:8f:f8",
+          "ssid": "E-VIT",
+          "channel": 12,
+          "frequency_mhz": 2467,
+          "rssi_dbm": -65,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 143,
+            "channel_util_pct": 56.08,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:2b:e8",
+          "ssid": "E-VIT",
+          "channel": 3,
+          "frequency_mhz": 2422,
+          "rssi_dbm": -65,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:be:a8",
+          "ssid": "E-VIT",
+          "channel": 12,
+          "frequency_mhz": 2467,
+          "rssi_dbm": -68,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 2,
+            "channel_util_255": 123,
+            "channel_util_pct": 48.24,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "2c:c5:d3:04:42:cc",
+          "ssid": "E-VIT",
+          "channel": 149,
+          "frequency_mhz": 5745,
+          "rssi_dbm": -70,
+          "is_serving": false
+        },
+        {
+          "bssid": "2c:e6:cc:29:28:38",
+          "ssid": "E-VIT",
+          "channel": 9,
+          "frequency_mhz": 2452,
+          "rssi_dbm": -70,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 109,
+            "channel_util_pct": 42.75,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:1d:d9:28",
+          "ssid": "E-VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -71,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 119,
+            "channel_util_pct": 46.67,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:1f:97:f8",
+          "ssid": "E-VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -71,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 4,
+            "channel_util_255": 106,
+            "channel_util_pct": 41.57,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "2c:c5:d3:04:43:98",
+          "ssid": "E-VIT",
+          "channel": 6,
+          "frequency_mhz": 2437,
+          "rssi_dbm": -71,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:18:a9:c8",
+          "ssid": "E-VIT",
+          "channel": 5,
+          "frequency_mhz": 2432,
+          "rssi_dbm": -73,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 66,
+            "channel_util_pct": 25.88,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "2c:e6:cc:29:28:3c",
+          "ssid": "E-VIT",
+          "channel": 161,
+          "frequency_mhz": 5805,
+          "rssi_dbm": -74,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 1,
+            "channel_util_pct": 0.39,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:16:e8",
+          "ssid": "E-VIT",
+          "channel": 13,
+          "frequency_mhz": 2472,
+          "rssi_dbm": -75,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:21:02:68",
+          "ssid": "E-VIT",
+          "channel": 11,
+          "frequency_mhz": 2462,
+          "rssi_dbm": -76,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:18:9b:48",
+          "ssid": "VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -76,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:8f:fc",
+          "ssid": "E-VIT",
+          "channel": 40,
+          "frequency_mhz": 5200,
+          "rssi_dbm": -77,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 6,
+            "channel_util_pct": 2.35,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:1f:94:fc",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -79,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:2b:ec",
+          "ssid": "E-VIT",
+          "channel": 44,
+          "frequency_mhz": 5220,
+          "rssi_dbm": -79,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:be:ac",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -82,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 17,
+            "channel_util_pct": 6.67,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "2c:c5:d3:04:43:9c",
+          "ssid": "E-VIT",
+          "channel": 157,
+          "frequency_mhz": 5785,
+          "rssi_dbm": -84,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:16:ec",
+          "ssid": "E-VIT",
+          "channel": 64,
+          "frequency_mhz": 5320,
+          "rssi_dbm": -84,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:07:2c",
+          "ssid": "E-VIT",
+          "channel": 52,
+          "frequency_mhz": 5260,
+          "rssi_dbm": -84,
+          "is_serving": true,
+          "bss_load": {
+            "station_count": 2,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:19:4c",
+          "ssid": "E-VIT",
+          "channel": 36,
+          "frequency_mhz": 5180,
+          "rssi_dbm": -85,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:1f:55:38",
+          "ssid": "E-VIT",
+          "channel": 2,
+          "frequency_mhz": 2417,
+          "rssi_dbm": -85,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 69,
+            "channel_util_pct": 27.06,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:11:4c",
+          "ssid": "E-VIT",
+          "channel": 165,
+          "frequency_mhz": 5825,
+          "rssi_dbm": -85,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:1f:08:fc",
+          "ssid": "E-VIT",
+          "channel": 56,
+          "frequency_mhz": 5280,
+          "rssi_dbm": -88,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 3,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "0a:40:cc:ca:b7:df",
+          "ssid": "Nothing Phone (2a) Plus_2094",
+          "channel": 149,
+          "frequency_mhz": 5745,
+          "rssi_dbm": -88,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:9b:7c",
+          "ssid": "E-VIT",
+          "channel": 40,
+          "frequency_mhz": 5200,
+          "rssi_dbm": -88,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:1d:d9:2c",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -88,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 12,
+            "channel_util_pct": 4.71,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:2d:0c",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -89,
+          "is_serving": false
+        }
+      ],
+      "device_model": "OnePlus GM1901",
+      "android_sdk": 31
+    },
+    {
+      "uuid": "f496c2f9-fa01-4590-9436-0d08c8dfb5a7",
+      "session_uuid": "aaeb9bb8-ea7f-4985-a89e-bb52b70fa9f8",
+      "window_label": "afternoon",
+      "point_label": "A5",
+      "repetition": 1,
+      "taken_at": "2026-10-19T12:10:21+05:30",
+      "is_control": false,
+      "frequency_mhz": 2452,
+      "channel": 9,
+      "band": "2.4",
+      "rssi_dbm": -51,
+      "tx_link_speed_mbps": 144,
+      "rx_link_speed_mbps": 144,
+      "dl_mbps": 16.759054767353167,
+      "ul_mbps": 12.073226077485607,
+      "dl_target_host": "speed.cloudflare.com",
+      "idle_latency_ms": 14.9,
+      "idle_latency_p95_ms": 46.3,
+      "loaded_latency_ms": 67.3,
+      "recovery_latency_ms": 9.6,
+      "jitter_ms": 13.267,
+      "packet_loss_pct": 0,
+      "gateway_ip": "172.16.64.1",
+      "latency_method": "icmp",
+      "neighbours": [
+        {
+          "bssid": "d4:68:4d:19:07:28",
+          "ssid": "E-VIT",
+          "channel": 3,
+          "frequency_mhz": 2422,
+          "rssi_dbm": -45,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 37,
+            "channel_util_pct": 14.51,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:07:2c",
+          "ssid": "E-VIT",
+          "channel": 52,
+          "frequency_mhz": 5260,
+          "rssi_dbm": -56,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 3,
+            "channel_util_255": 6,
+            "channel_util_pct": 2.35,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "2c:c5:d3:04:42:c8",
+          "ssid": "E-VIT",
+          "channel": 11,
+          "frequency_mhz": 2462,
+          "rssi_dbm": -59,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:1f:45:28",
+          "ssid": "E-VIT",
+          "channel": 11,
+          "frequency_mhz": 2462,
+          "rssi_dbm": -62,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:be:a8",
+          "ssid": "E-VIT",
+          "channel": 12,
+          "frequency_mhz": 2467,
+          "rssi_dbm": -64,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 97,
+            "channel_util_pct": 38.04,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "84:18:3a:0c:8f:f8",
+          "ssid": "E-VIT",
+          "channel": 12,
+          "frequency_mhz": 2467,
+          "rssi_dbm": -64,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 108,
+            "channel_util_pct": 42.35,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:1f:08:f8",
+          "ssid": "E-VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -65,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 119,
+            "channel_util_pct": 46.67,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:2b:e8",
+          "ssid": "E-VIT",
+          "channel": 3,
+          "frequency_mhz": 2422,
+          "rssi_dbm": -67,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:1d:d9:28",
+          "ssid": "E-VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -68,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 104,
+            "channel_util_pct": 40.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:20:7a:38",
+          "ssid": "E-VIT",
+          "channel": 6,
+          "frequency_mhz": 2437,
+          "rssi_dbm": -68,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:2d:08",
+          "ssid": "E-VIT",
+          "channel": 6,
+          "frequency_mhz": 2437,
+          "rssi_dbm": -68,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:9b:78",
+          "ssid": "E-VIT",
+          "channel": 13,
+          "frequency_mhz": 2472,
+          "rssi_dbm": -72,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:11:48",
+          "ssid": "E-VIT",
+          "channel": 11,
+          "frequency_mhz": 2462,
+          "rssi_dbm": -72,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:be:ac",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -73,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 3,
+            "channel_util_pct": 1.18,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "2c:c5:d3:04:43:98",
+          "ssid": "E-VIT",
+          "channel": 6,
+          "frequency_mhz": 2437,
+          "rssi_dbm": -73,
+          "is_serving": false
+        },
+        {
+          "bssid": "2c:c5:d3:04:42:cc",
+          "ssid": "E-VIT",
+          "channel": 149,
+          "frequency_mhz": 5745,
+          "rssi_dbm": -75,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:1f:08:fc",
+          "ssid": "E-VIT",
+          "channel": 56,
+          "frequency_mhz": 5280,
+          "rssi_dbm": -75,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 3,
+            "channel_util_255": 3,
+            "channel_util_pct": 1.18,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:29:38",
+          "ssid": "E-VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -75,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:1f:94:f8",
+          "ssid": "E-VIT",
+          "channel": 8,
+          "frequency_mhz": 2447,
+          "rssi_dbm": -75,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 4,
+            "channel_util_255": 65,
+            "channel_util_pct": 25.49,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:58:9b:48",
+          "ssid": "E-VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -77,
+          "is_serving": false
+        },
+        {
+          "bssid": "8c:b6:c5:16:ed:98",
+          "ssid": "JioAirfiberA6",
+          "channel": 36,
+          "frequency_mhz": 5180,
+          "rssi_dbm": -78,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:8f:fc",
+          "ssid": "E-VIT",
+          "channel": 40,
+          "frequency_mhz": 5200,
+          "rssi_dbm": -78,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 7,
+            "channel_util_pct": 2.75,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:16:ec",
+          "ssid": "E-VIT",
+          "channel": 64,
+          "frequency_mhz": 5320,
+          "rssi_dbm": -79,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:2b:ec",
+          "ssid": "E-VIT",
+          "channel": 44,
+          "frequency_mhz": 5220,
+          "rssi_dbm": -80,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:19:48",
+          "ssid": "E-VIT",
+          "channel": 6,
+          "frequency_mhz": 2437,
+          "rssi_dbm": -81,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:1f:45:2c",
+          "ssid": "E-VIT",
+          "channel": 149,
+          "frequency_mhz": 5745,
+          "rssi_dbm": -82,
+          "is_serving": false
+        },
+        {
+          "bssid": "12:27:8c:6b:69:64",
+          "ssid": "OPPO A6 Pro 5G j4zy",
+          "channel": 4,
+          "frequency_mhz": 2427,
+          "rssi_dbm": -82,
+          "is_serving": false
+        },
+        {
+          "bssid": "2c:e6:cc:29:28:3c",
+          "ssid": "E-VIT",
+          "channel": 161,
+          "frequency_mhz": 5805,
+          "rssi_dbm": -84,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 1,
+            "channel_util_pct": 0.39,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "84:18:3a:0c:9b:7c",
+          "ssid": "E-VIT",
+          "channel": 40,
+          "frequency_mhz": 5200,
+          "rssi_dbm": -84,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:2d:0c",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -84,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:1f:94:fc",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -87,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:11:4c",
+          "ssid": "E-VIT",
+          "channel": 165,
+          "frequency_mhz": 5825,
+          "rssi_dbm": -87,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:1d:d9:2c",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -87,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        }
+      ],
+      "device_model": "OnePlus GM1901",
+      "android_sdk": 31
+    },
+    {
+      "uuid": "f65e6182-ee86-430b-84b6-976344767925",
+      "session_uuid": "aaeb9bb8-ea7f-4985-a89e-bb52b70fa9f8",
+      "window_label": "afternoon",
+      "point_label": "A9",
+      "repetition": 1,
+      "taken_at": "2026-10-19T12:11:53+05:30",
+      "is_control": false,
+      "frequency_mhz": 2437,
+      "channel": 6,
+      "band": "2.4",
+      "rssi_dbm": -75,
+      "tx_link_speed_mbps": 57,
+      "rx_link_speed_mbps": 57,
+      "dl_mbps": 3.9146837333333333,
+      "ul_mbps": 12.478177136168553,
+      "dl_target_host": "speed.cloudflare.com",
+      "idle_latency_ms": 28.8,
+      "idle_latency_p95_ms": 165,
+      "loaded_latency_ms": 337,
+      "recovery_latency_ms": 9.82,
+      "jitter_ms": 42.857,
+      "packet_loss_pct": 0,
+      "gateway_ip": "172.16.64.1",
+      "latency_method": "icmp",
+      "neighbours": [
+        {
+          "bssid": "d4:68:4d:20:f2:48",
+          "ssid": "E-VIT",
+          "channel": 9,
+          "frequency_mhz": 2452,
+          "rssi_dbm": -55,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:16:e8",
+          "ssid": "E-VIT",
+          "channel": 13,
+          "frequency_mhz": 2472,
+          "rssi_dbm": -56,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:8f:f8",
+          "ssid": "E-VIT",
+          "channel": 12,
+          "frequency_mhz": 2467,
+          "rssi_dbm": -61,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 113,
+            "channel_util_pct": 44.31,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:21:02:68",
+          "ssid": "E-VIT",
+          "channel": 11,
+          "frequency_mhz": 2462,
+          "rssi_dbm": -62,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:18:9b:48",
+          "ssid": "VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -63,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:58:9b:48",
+          "ssid": "E-VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -64,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:1f:55:38",
+          "ssid": "E-VIT",
+          "channel": 2,
+          "frequency_mhz": 2417,
+          "rssi_dbm": -65,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 68,
+            "channel_util_pct": 26.67,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:20:f2:4c",
+          "ssid": "E-VIT",
+          "channel": 44,
+          "frequency_mhz": 5220,
+          "rssi_dbm": -66,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:18:a9:c8",
+          "ssid": "E-VIT",
+          "channel": 5,
+          "frequency_mhz": 2432,
+          "rssi_dbm": -66,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 68,
+            "channel_util_pct": 26.67,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:07:28",
+          "ssid": "E-VIT",
+          "channel": 3,
+          "frequency_mhz": 2422,
+          "rssi_dbm": -68,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 40,
+            "channel_util_pct": 15.69,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "c0:c5:20:0e:19:e8",
+          "ssid": "E-VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -72,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:18:a9:cc",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -75,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "84:18:3a:0c:8f:fc",
+          "ssid": "E-VIT",
+          "channel": 40,
+          "frequency_mhz": 5200,
+          "rssi_dbm": -75,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 3,
+            "channel_util_pct": 1.18,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "f0:b0:52:28:ca:78",
+          "ssid": "E-VIT",
+          "channel": 5,
+          "frequency_mhz": 2432,
+          "rssi_dbm": -77,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:16:ec",
+          "ssid": "E-VIT",
+          "channel": 64,
+          "frequency_mhz": 5320,
+          "rssi_dbm": -79,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:1f:97:f8",
+          "ssid": "E-VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -81,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 3,
+            "channel_util_255": 84,
+            "channel_util_pct": 32.94,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:2a:48",
+          "ssid": "E-VIT",
+          "channel": 7,
+          "frequency_mhz": 2442,
+          "rssi_dbm": -83,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 4,
+            "channel_util_255": 77,
+            "channel_util_pct": 30.2,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:1f:55:3c",
+          "ssid": "E-VIT",
+          "channel": 149,
+          "frequency_mhz": 5745,
+          "rssi_dbm": -84,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:07:2c",
+          "ssid": "E-VIT",
+          "channel": 52,
+          "frequency_mhz": 5260,
+          "rssi_dbm": -87,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 2,
+            "channel_util_255": 29,
+            "channel_util_pct": 11.37,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "84:18:3a:0c:be:ac",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -88,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 4,
+            "channel_util_pct": 1.57,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "2c:c5:d3:04:58:9c",
+          "ssid": "E-VIT",
+          "channel": 60,
+          "frequency_mhz": 5300,
+          "rssi_dbm": -88,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:18:9b:4c",
+          "ssid": "E-VIT",
+          "channel": 36,
+          "frequency_mhz": 5180,
+          "rssi_dbm": -90,
+          "is_serving": false
+        },
+        {
+          "bssid": "f0:b0:52:28:ca:7c",
+          "ssid": "E-VIT",
+          "channel": 157,
+          "frequency_mhz": 5785,
+          "rssi_dbm": -90,
+          "is_serving": false
+        }
+      ],
+      "device_model": "OnePlus GM1901",
+      "android_sdk": 31
+    },
+    {
+      "uuid": "c52e54f8-5ea5-46c2-b15f-9b254ce13219",
+      "session_uuid": "aaeb9bb8-ea7f-4985-a89e-bb52b70fa9f8",
+      "window_label": "afternoon",
+      "point_label": "C9",
+      "repetition": 1,
+      "taken_at": "2026-10-19T12:13:36+05:30",
+      "is_control": false,
+      "ssid": "E-VIT",
+      "bssid": "d4:68:4d:19:29:38",
+      "frequency_mhz": 2412,
+      "channel": 1,
+      "band": "2.4",
+      "rssi_dbm": -76,
+      "tx_link_speed_mbps": 43,
+      "rx_link_speed_mbps": 43,
+      "dl_target_host": "speed.cloudflare.com",
+      "idle_latency_ms": 10.2,
+      "idle_latency_p95_ms": 224,
+      "loaded_latency_ms": 23,
+      "recovery_latency_ms": 4.552813,
+      "jitter_ms": 67.663,
+      "packet_loss_pct": 2,
+      "gateway_ip": "172.16.64.1",
+      "latency_method": "icmp",
+      "neighbours": [
+        {
+          "bssid": "d4:68:4d:19:29:38",
+          "ssid": "E-VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -48,
+          "is_serving": true
+        },
+        {
+          "bssid": "d4:68:4d:18:b2:e8",
+          "ssid": "E-VIT",
+          "channel": 9,
+          "frequency_mhz": 2452,
+          "rssi_dbm": -54,
+          "is_serving": false
+        },
+        {
+          "bssid": "f0:b0:52:28:ca:78",
+          "ssid": "E-VIT",
+          "channel": 9,
+          "frequency_mhz": 2452,
+          "rssi_dbm": -59,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:13:e8",
+          "ssid": "E-VIT",
+          "channel": 12,
+          "frequency_mhz": 2467,
+          "rssi_dbm": -62,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 51,
+            "channel_util_pct": 20,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "2c:c5:d3:04:47:c8",
+          "ssid": "E-VIT",
+          "channel": 5,
+          "frequency_mhz": 2432,
+          "rssi_dbm": -63,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 3,
+            "channel_util_255": 177,
+            "channel_util_pct": 69.41,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:1b:e8",
+          "ssid": "E-VIT",
+          "channel": 7,
+          "frequency_mhz": 2442,
+          "rssi_dbm": -64,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 53,
+            "channel_util_pct": 20.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:15:18",
+          "ssid": "E-VIT",
+          "channel": 10,
+          "frequency_mhz": 2457,
+          "rssi_dbm": -65,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:18:b5:d8",
+          "ssid": "E-VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -71,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:be:a8",
+          "ssid": "E-VIT",
+          "channel": 12,
+          "frequency_mhz": 2467,
+          "rssi_dbm": -72,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 51,
+            "channel_util_pct": 20,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:18:b2:ec",
+          "ssid": "E-VIT",
+          "channel": 60,
+          "frequency_mhz": 5300,
+          "rssi_dbm": -73,
+          "is_serving": false
+        },
+        {
+          "bssid": "8c:b6:c5:16:ed:98",
+          "ssid": "JioAirfiberA6",
+          "channel": 36,
+          "frequency_mhz": 5180,
+          "rssi_dbm": -73,
+          "is_serving": false
+        },
+        {
+          "bssid": "f0:b0:52:29:30:b8",
+          "ssid": "E-VIT",
+          "channel": 13,
+          "frequency_mhz": 2472,
+          "rssi_dbm": -73,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 3,
+            "channel_util_255": 44,
+            "channel_util_pct": 17.25,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:01:dc",
+          "ssid": "E-VIT",
+          "channel": 56,
+          "frequency_mhz": 5280,
+          "rssi_dbm": -74,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 3,
+            "channel_util_255": 13,
+            "channel_util_pct": 5.1,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "f0:b0:52:28:ca:7c",
+          "ssid": "E-VIT",
+          "channel": 157,
+          "frequency_mhz": 5785,
+          "rssi_dbm": -74,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:18:b5:dc",
+          "ssid": "E-VIT",
+          "channel": 165,
+          "frequency_mhz": 5825,
+          "rssi_dbm": -76,
+          "is_serving": false
+        },
+        {
+          "bssid": "2c:e6:cc:29:28:38",
+          "ssid": "E-VIT",
+          "channel": 9,
+          "frequency_mhz": 2452,
+          "rssi_dbm": -76,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 65,
+            "channel_util_pct": 25.49,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:15:1c",
+          "ssid": "E-VIT",
+          "channel": 149,
+          "frequency_mhz": 5745,
+          "rssi_dbm": -78,
+          "is_serving": false
+        },
+        {
+          "bssid": "f0:b0:52:28:c8:68",
+          "ssid": "E-VIT",
+          "channel": 11,
+          "frequency_mhz": 2462,
+          "rssi_dbm": -79,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:be:ac",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -80,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "12:c6:9d:4a:bf:f5",
+          "ssid": "C:\\Malware\\Trojan\\Virus.exe",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -81,
+          "is_serving": false
+        },
+        {
+          "bssid": "f0:b0:52:29:25:cc",
+          "ssid": "E-VIT",
+          "channel": 149,
+          "frequency_mhz": 5745,
+          "rssi_dbm": -81,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:13:ec",
+          "ssid": "E-VIT",
+          "channel": 157,
+          "frequency_mhz": 5785,
+          "rssi_dbm": -82,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 3,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "ce:40:1d:c7:d0:48",
+          "ssid": "Shrii",
+          "channel": 149,
+          "frequency_mhz": 5745,
+          "rssi_dbm": -82,
+          "is_serving": false
+        },
+        {
+          "bssid": "f0:b0:52:27:b8:ac",
+          "ssid": "E-VIT",
+          "channel": 36,
+          "frequency_mhz": 5180,
+          "rssi_dbm": -83,
+          "is_serving": false
+        },
+        {
+          "bssid": "c0:c5:20:0e:19:ec",
+          "ssid": "E-VIT",
+          "channel": 161,
+          "frequency_mhz": 5805,
+          "rssi_dbm": -84,
+          "is_serving": false
+        },
+        {
+          "bssid": "2c:e6:cc:29:28:3c",
+          "ssid": "E-VIT",
+          "channel": 161,
+          "frequency_mhz": 5805,
+          "rssi_dbm": -85,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 1,
+            "channel_util_pct": 0.39,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:20:93:8c",
+          "ssid": "E-VIT",
+          "channel": 157,
+          "frequency_mhz": 5785,
+          "rssi_dbm": -85,
+          "is_serving": false
+        },
+        {
+          "bssid": "c0:c5:20:0e:17:8c",
+          "ssid": "E-VIT",
+          "channel": 40,
+          "frequency_mhz": 5200,
+          "rssi_dbm": -85,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:8f:fc",
+          "ssid": "E-VIT",
+          "channel": 40,
+          "frequency_mhz": 5200,
+          "rssi_dbm": -86,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 7,
+            "channel_util_pct": 2.75,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "56:ad:00:d8:93:53",
+          "ssid": "Dk's Phone",
+          "channel": 44,
+          "frequency_mhz": 5220,
+          "rssi_dbm": -87,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:2a:4c",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -89,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 3,
+            "channel_util_pct": 1.18,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "f0:b0:52:28:c8:6c",
+          "ssid": "E-VIT",
+          "channel": 165,
+          "frequency_mhz": 5825,
+          "rssi_dbm": -90,
+          "is_serving": false
+        },
+        {
+          "bssid": "46:dc:b7:3e:81:4a",
+          "ssid": "Suryansh Sinha",
+          "channel": 149,
+          "frequency_mhz": 5745,
+          "rssi_dbm": -90,
+          "is_serving": false
+        }
+      ],
+      "device_model": "OnePlus GM1901",
+      "android_sdk": 31,
+      "note": "download: SocketTimeoutException: timeout; upload: SocketException: Software caused connection abort"
+    },
+    {
+      "uuid": "4df040d4-f3b3-44a7-bac9-4345499dd9d3",
+      "session_uuid": "2d381929-dabd-49a9-83e6-abddf54dc161",
+      "window_label": "evening",
+      "point_label": "C5",
+      "repetition": 1,
+      "taken_at": "2026-10-19T17:55:34+05:30",
+      "is_control": true,
+      "ssid": "E-VIT",
+      "bssid": "d4:68:4d:18:a9:c8",
+      "frequency_mhz": 2472,
+      "channel": 13,
+      "band": "2.4",
+      "rssi_dbm": -45,
+      "tx_link_speed_mbps": 144,
+      "rx_link_speed_mbps": 144,
+      "dl_mbps": 18.2378085868985,
+      "ul_mbps": 4.242864670092741,
+      "dl_target_host": "speed.cloudflare.com",
+      "idle_latency_ms": 2.86,
+      "idle_latency_p95_ms": 58.1,
+      "loaded_latency_ms": 50.7,
+      "recovery_latency_ms": 5.11,
+      "jitter_ms": 27.107,
+      "packet_loss_pct": 0,
+      "gateway_ip": "172.16.64.1",
+      "latency_method": "icmp",
+      "bss_load_pre": {
+        "station_count": 2,
+        "channel_util_255": 43,
+        "channel_util_pct": 16.86,
+        "admission_capacity": 0
+      },
+      "neighbours": [
+        {
+          "bssid": "d4:68:4d:18:a9:c8",
+          "ssid": "E-VIT",
+          "channel": 13,
+          "frequency_mhz": 2472,
+          "rssi_dbm": -46,
+          "is_serving": true,
+          "bss_load": {
+            "station_count": 2,
+            "channel_util_255": 43,
+            "channel_util_pct": 16.86,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "f0:b0:52:28:b4:68",
+          "ssid": "E-VIT",
+          "channel": 3,
+          "frequency_mhz": 2422,
+          "rssi_dbm": -56,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:8f:f8",
+          "ssid": "E-VIT",
+          "channel": 3,
+          "frequency_mhz": 2422,
+          "rssi_dbm": -60,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 43,
+            "channel_util_pct": 16.86,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:18:a9:cc",
+          "ssid": "E-VIT",
+          "channel": 60,
+          "frequency_mhz": 5300,
+          "rssi_dbm": -60,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 36,
+            "channel_util_pct": 14.12,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "2c:c5:d3:04:47:c8",
+          "ssid": "E-VIT",
+          "channel": 4,
+          "frequency_mhz": 2427,
+          "rssi_dbm": -69,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 2,
+            "channel_util_255": 79,
+            "channel_util_pct": 30.98,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "2c:c5:d3:04:4b:e8",
+          "ssid": "E-VIT",
+          "channel": 6,
+          "frequency_mhz": 2437,
+          "rssi_dbm": -76,
+          "is_serving": false
+        },
+        {
+          "bssid": "f0:b0:52:28:b4:6c",
+          "ssid": "E-VIT",
+          "channel": 36,
+          "frequency_mhz": 5180,
+          "rssi_dbm": -77,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:8f:fc",
+          "ssid": "E-VIT",
+          "channel": 40,
+          "frequency_mhz": 5200,
+          "rssi_dbm": -78,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:20:93:88",
+          "ssid": "E-VIT",
+          "channel": 2,
+          "frequency_mhz": 2417,
+          "rssi_dbm": -82,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:9b:7c",
+          "ssid": "E-VIT",
+          "channel": 40,
+          "frequency_mhz": 5200,
+          "rssi_dbm": -86,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:20:f2:4c",
+          "ssid": "E-VIT",
+          "channel": 44,
+          "frequency_mhz": 5220,
+          "rssi_dbm": -90,
+          "is_serving": false
+        },
+        {
+          "bssid": "2c:e6:cc:29:28:3c",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -90,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        }
+      ],
+      "device_model": "OnePlus GM1901",
+      "android_sdk": 31
+    },
+    {
+      "uuid": "f346a50b-2f61-470e-a42d-288948eeca4b",
+      "session_uuid": "2d381929-dabd-49a9-83e6-abddf54dc161",
+      "window_label": "evening",
+      "point_label": "C1",
+      "repetition": 1,
+      "taken_at": "2026-10-19T17:58:55+05:30",
+      "is_control": false,
+      "ssid": "E-VIT",
+      "bssid": "2c:c5:d3:04:42:c8",
+      "frequency_mhz": 2462,
+      "channel": 11,
+      "band": "2.4",
+      "rssi_dbm": -56,
+      "tx_link_speed_mbps": 144,
+      "rx_link_speed_mbps": 144,
+      "dl_mbps": 0.8710459976105138,
+      "dl_target_host": "speed.cloudflare.com",
+      "idle_latency_ms": 7.78,
+      "idle_latency_p95_ms": 78.8,
+      "loaded_latency_ms": 980,
+      "recovery_latency_ms": 326,
+      "jitter_ms": 22.919,
+      "packet_loss_pct": 2,
+      "gateway_ip": "172.16.64.1",
+      "latency_method": "icmp",
+      "neighbours": [
+        {
+          "bssid": "2c:c5:d3:04:42:c8",
+          "ssid": "E-VIT",
+          "channel": 11,
+          "frequency_mhz": 2462,
+          "rssi_dbm": -60,
+          "is_serving": true
+        },
+        {
+          "bssid": "d4:68:4d:1f:94:f8",
+          "ssid": "E-VIT",
+          "channel": 5,
+          "frequency_mhz": 2432,
+          "rssi_dbm": -60,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 3,
+            "channel_util_255": 133,
+            "channel_util_pct": 52.16,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:07:28",
+          "ssid": "E-VIT",
+          "channel": 4,
+          "frequency_mhz": 2427,
+          "rssi_dbm": -62,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 112,
+            "channel_util_pct": 43.92,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "84:18:3a:0c:8f:f8",
+          "ssid": "E-VIT",
+          "channel": 3,
+          "frequency_mhz": 2422,
+          "rssi_dbm": -65,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 123,
+            "channel_util_pct": 48.24,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "84:18:3a:0c:be:a8",
+          "ssid": "E-VIT",
+          "channel": 13,
+          "frequency_mhz": 2472,
+          "rssi_dbm": -68,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 2,
+            "channel_util_255": 133,
+            "channel_util_pct": 52.16,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:2b:ec",
+          "ssid": "E-VIT",
+          "channel": 44,
+          "frequency_mhz": 5220,
+          "rssi_dbm": -71,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:9b:78",
+          "ssid": "E-VIT",
+          "channel": 10,
+          "frequency_mhz": 2457,
+          "rssi_dbm": -72,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:11:48",
+          "ssid": "E-VIT",
+          "channel": 11,
+          "frequency_mhz": 2462,
+          "rssi_dbm": -72,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:21:02:68",
+          "ssid": "E-VIT",
+          "channel": 11,
+          "frequency_mhz": 2462,
+          "rssi_dbm": -72,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:8f:fc",
+          "ssid": "E-VIT",
+          "channel": 40,
+          "frequency_mhz": 5200,
+          "rssi_dbm": -73,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 8,
+            "channel_util_pct": 3.14,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:1d:d9:28",
+          "ssid": "E-VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -74,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 108,
+            "channel_util_pct": 42.35,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "2c:e6:cc:29:28:3c",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -74,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 1,
+            "channel_util_pct": 0.39,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:1f:97:f8",
+          "ssid": "E-VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -74,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 2,
+            "channel_util_255": 66,
+            "channel_util_pct": 25.88,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "2c:c5:d3:04:42:cc",
+          "ssid": "E-VIT",
+          "channel": 149,
+          "frequency_mhz": 5745,
+          "rssi_dbm": -75,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:18:9b:48",
+          "ssid": "VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -75,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:1f:94:fc",
+          "ssid": "E-VIT",
+          "channel": 149,
+          "frequency_mhz": 5745,
+          "rssi_dbm": -76,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 3,
+            "channel_util_255": 3,
+            "channel_util_pct": 1.18,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "8c:b6:c5:16:ed:98",
+          "ssid": "JioAirfiberA6",
+          "channel": 36,
+          "frequency_mhz": 5180,
+          "rssi_dbm": -76,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:be:ac",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -77,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:1f:97:fc",
+          "ssid": "E-VIT",
+          "channel": 56,
+          "frequency_mhz": 5280,
+          "rssi_dbm": -77,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 3,
+            "channel_util_pct": 1.18,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:07:2c",
+          "ssid": "E-VIT",
+          "channel": 64,
+          "frequency_mhz": 5320,
+          "rssi_dbm": -77,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 5,
+            "channel_util_255": 92,
+            "channel_util_pct": 36.08,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "2c:c5:d3:04:43:9c",
+          "ssid": "E-VIT",
+          "channel": 157,
+          "frequency_mhz": 5785,
+          "rssi_dbm": -78,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:21:02:6c",
+          "ssid": "E-VIT",
+          "channel": 36,
+          "frequency_mhz": 5180,
+          "rssi_dbm": -81,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:16:ec",
+          "ssid": "E-VIT",
+          "channel": 64,
+          "frequency_mhz": 5320,
+          "rssi_dbm": -82,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:18:9b:4c",
+          "ssid": "E-VIT",
+          "channel": 36,
+          "frequency_mhz": 5180,
+          "rssi_dbm": -85,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:9b:7c",
+          "ssid": "E-VIT",
+          "channel": 40,
+          "frequency_mhz": 5200,
+          "rssi_dbm": -87,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:1f:08:fc",
+          "ssid": "E-VIT",
+          "channel": 56,
+          "frequency_mhz": 5280,
+          "rssi_dbm": -88,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 2,
+            "channel_util_255": 21,
+            "channel_util_pct": 8.24,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:11:4c",
+          "ssid": "E-VIT",
+          "channel": 165,
+          "frequency_mhz": 5825,
+          "rssi_dbm": -90,
+          "is_serving": false
+        }
+      ],
+      "device_model": "OnePlus GM1901",
+      "android_sdk": 31,
+      "note": "upload: SocketTimeoutException: timeout"
+    },
+    {
+      "uuid": "f1b85777-1926-4dba-a481-e1cf4fcafd4d",
+      "session_uuid": "2d381929-dabd-49a9-83e6-abddf54dc161",
+      "window_label": "evening",
+      "point_label": "A1",
+      "repetition": 1,
+      "taken_at": "2026-10-19T18:00:44+05:30",
+      "is_control": false,
+      "ssid": "E-VIT",
+      "bssid": "2c:e6:cc:29:28:38",
+      "frequency_mhz": 2452,
+      "channel": 9,
+      "band": "2.4",
+      "rssi_dbm": -74,
+      "tx_link_speed_mbps": 57,
+      "rx_link_speed_mbps": 57,
+      "dl_mbps": 15.334665443985939,
+      "ul_mbps": 6.438840756845692,
+      "dl_target_host": "speed.cloudflare.com",
+      "idle_latency_ms": 2.68,
+      "idle_latency_p95_ms": 51.4,
+      "loaded_latency_ms": 86,
+      "recovery_latency_ms": 4.96,
+      "jitter_ms": 20.439,
+      "packet_loss_pct": 0,
+      "gateway_ip": "172.16.64.1",
+      "latency_method": "icmp",
+      "bss_load_pre": {
+        "station_count": 1,
+        "channel_util_255": 43,
+        "channel_util_pct": 16.86,
+        "admission_capacity": 0
+      },
+      "bss_load_post": {
+        "station_count": 1,
+        "channel_util_255": 168,
+        "channel_util_pct": 65.88,
+        "admission_capacity": 0
+      },
+      "neighbours": [
+        {
+          "bssid": "d4:68:4d:19:07:28",
+          "ssid": "E-VIT",
+          "channel": 4,
+          "frequency_mhz": 2427,
+          "rssi_dbm": -48,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 105,
+            "channel_util_pct": 41.18,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:07:2c",
+          "ssid": "E-VIT",
+          "channel": 64,
+          "frequency_mhz": 5320,
+          "rssi_dbm": -53,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 5,
+            "channel_util_255": 7,
+            "channel_util_pct": 2.75,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "2c:c5:d3:04:42:c8",
+          "ssid": "E-VIT",
+          "channel": 11,
+          "frequency_mhz": 2462,
+          "rssi_dbm": -58,
+          "is_serving": false
+        },
+        {
+          "bssid": "2c:c5:d3:04:42:cc",
+          "ssid": "E-VIT",
+          "channel": 149,
+          "frequency_mhz": 5745,
+          "rssi_dbm": -66,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:1f:08:f8",
+          "ssid": "E-VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -71,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 104,
+            "channel_util_pct": 40.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "2c:c5:d3:04:43:98",
+          "ssid": "E-VIT",
+          "channel": 6,
+          "frequency_mhz": 2437,
+          "rssi_dbm": -71,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:2d:08",
+          "ssid": "E-VIT",
+          "channel": 6,
+          "frequency_mhz": 2437,
+          "rssi_dbm": -74,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:1d:d9:28",
+          "ssid": "E-VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -75,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 120,
+            "channel_util_pct": 47.06,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "2c:e6:cc:29:28:38",
+          "ssid": "E-VIT",
+          "channel": 9,
+          "frequency_mhz": 2452,
+          "rssi_dbm": -75,
+          "is_serving": true,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 43,
+            "channel_util_pct": 16.86,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "84:18:3a:0c:be:ac",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -76,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:1f:94:f8",
+          "ssid": "E-VIT",
+          "channel": 5,
+          "frequency_mhz": 2432,
+          "rssi_dbm": -76,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 3,
+            "channel_util_255": 133,
+            "channel_util_pct": 52.16,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:1f:08:fc",
+          "ssid": "E-VIT",
+          "channel": 56,
+          "frequency_mhz": 5280,
+          "rssi_dbm": -77,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 2,
+            "channel_util_255": 18,
+            "channel_util_pct": 7.06,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "84:18:3a:0c:8f:fc",
+          "ssid": "E-VIT",
+          "channel": 40,
+          "frequency_mhz": 5200,
+          "rssi_dbm": -77,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "84:18:3a:0c:9b:78",
+          "ssid": "E-VIT",
+          "channel": 10,
+          "frequency_mhz": 2457,
+          "rssi_dbm": -79,
+          "is_serving": false
+        },
+        {
+          "bssid": "f0:b0:52:28:36:88",
+          "ssid": "E-VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -79,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:2b:ec",
+          "ssid": "E-VIT",
+          "channel": 44,
+          "frequency_mhz": 5220,
+          "rssi_dbm": -81,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:1f:45:2c",
+          "ssid": "E-VIT",
+          "channel": 149,
+          "frequency_mhz": 5745,
+          "rssi_dbm": -81,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:20:f2:48",
+          "ssid": "E-VIT",
+          "channel": 8,
+          "frequency_mhz": 2447,
+          "rssi_dbm": -81,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:9b:7c",
+          "ssid": "E-VIT",
+          "channel": 40,
+          "frequency_mhz": 5200,
+          "rssi_dbm": -83,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:1d:d9:2c",
+          "ssid": "E-VIT",
+          "channel": 161,
+          "frequency_mhz": 5805,
+          "rssi_dbm": -83,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:58:9b:48",
+          "ssid": "E-VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -83,
+          "is_serving": false
+        },
+        {
+          "bssid": "0a:2a:8e:40:41:df",
+          "ssid": "v60",
+          "channel": 149,
+          "frequency_mhz": 5745,
+          "rssi_dbm": -84,
+          "is_serving": false
+        },
+        {
+          "bssid": "2c:e6:cc:29:28:3c",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -85,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:2d:0c",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -85,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:16:ec",
+          "ssid": "E-VIT",
+          "channel": 64,
+          "frequency_mhz": 5320,
+          "rssi_dbm": -87,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:11:4c",
+          "ssid": "E-VIT",
+          "channel": 165,
+          "frequency_mhz": 5825,
+          "rssi_dbm": -87,
+          "is_serving": false
+        },
+        {
+          "bssid": "2c:c5:d3:04:43:9c",
+          "ssid": "E-VIT",
+          "channel": 157,
+          "frequency_mhz": 5785,
+          "rssi_dbm": -89,
+          "is_serving": false
+        },
+        {
+          "bssid": "20:b5:c6:39:57:88",
+          "ssid": "JioAirfiberA6",
+          "channel": 56,
+          "frequency_mhz": 5280,
+          "rssi_dbm": -89,
+          "is_serving": false
+        }
+      ],
+      "device_model": "OnePlus GM1901",
+      "android_sdk": 31
+    },
+    {
+      "uuid": "87eaac7f-b16e-450b-becd-bef06d3a02e0",
+      "session_uuid": "2d381929-dabd-49a9-83e6-abddf54dc161",
+      "window_label": "evening",
+      "point_label": "A5",
+      "repetition": 1,
+      "taken_at": "2026-10-19T18:02:25+05:30",
+      "is_control": false,
+      "ssid": "E-VIT",
+      "bssid": "84:18:3a:0c:8f:f8",
+      "frequency_mhz": 2422,
+      "channel": 3,
+      "band": "2.4",
+      "rssi_dbm": -54,
+      "tx_link_speed_mbps": 144,
+      "rx_link_speed_mbps": 144,
+      "dl_mbps": 9.138165675057207,
+      "ul_mbps": 9.504886841518687,
+      "dl_target_host": "speed.cloudflare.com",
+      "idle_latency_ms": 6.47,
+      "idle_latency_p95_ms": 35.4,
+      "loaded_latency_ms": 53.3,
+      "recovery_latency_ms": 5.14,
+      "jitter_ms": 13.764,
+      "packet_loss_pct": 0,
+      "gateway_ip": "172.16.64.1",
+      "latency_method": "icmp",
+      "bss_load_pre": {
+        "station_count": 0,
+        "channel_util_255": 39,
+        "channel_util_pct": 15.29,
+        "admission_capacity": 0
+      },
+      "bss_load_post": {
+        "station_count": 1,
+        "channel_util_255": 129,
+        "channel_util_pct": 50.59,
+        "admission_capacity": 0
+      },
+      "neighbours": [
+        {
+          "bssid": "d4:68:4d:19:07:28",
+          "ssid": "E-VIT",
+          "channel": 4,
+          "frequency_mhz": 2427,
+          "rssi_dbm": -52,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 168,
+            "channel_util_pct": 65.88,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:1f:08:f8",
+          "ssid": "E-VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -60,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 110,
+            "channel_util_pct": 43.14,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "84:18:3a:0c:8f:f8",
+          "ssid": "E-VIT",
+          "channel": 3,
+          "frequency_mhz": 2422,
+          "rssi_dbm": -68,
+          "is_serving": true,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 39,
+            "channel_util_pct": 15.29,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:16:e8",
+          "ssid": "E-VIT",
+          "channel": 13,
+          "frequency_mhz": 2472,
+          "rssi_dbm": -70,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:07:2c",
+          "ssid": "E-VIT",
+          "channel": 64,
+          "frequency_mhz": 5320,
+          "rssi_dbm": -71,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 5,
+            "channel_util_255": 6,
+            "channel_util_pct": 2.35,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:2d:08",
+          "ssid": "E-VIT",
+          "channel": 6,
+          "frequency_mhz": 2437,
+          "rssi_dbm": -71,
+          "is_serving": false
+        },
+        {
+          "bssid": "2c:c5:d3:04:42:cc",
+          "ssid": "E-VIT",
+          "channel": 149,
+          "frequency_mhz": 5745,
+          "rssi_dbm": -74,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:1f:08:fc",
+          "ssid": "E-VIT",
+          "channel": 56,
+          "frequency_mhz": 5280,
+          "rssi_dbm": -75,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 2,
+            "channel_util_255": 7,
+            "channel_util_pct": 2.75,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "84:18:3a:0c:be:ac",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -76,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:19:48",
+          "ssid": "E-VIT",
+          "channel": 6,
+          "frequency_mhz": 2437,
+          "rssi_dbm": -77,
+          "is_serving": false
+        },
+        {
+          "bssid": "8c:b6:c5:1c:82:30",
+          "ssid": "JioAirfiberA6",
+          "channel": 149,
+          "frequency_mhz": 5745,
+          "rssi_dbm": -80,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:8f:fc",
+          "ssid": "E-VIT",
+          "channel": 40,
+          "frequency_mhz": 5200,
+          "rssi_dbm": -81,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 1,
+            "channel_util_pct": 0.39,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:1d:d9:2c",
+          "ssid": "E-VIT",
+          "channel": 161,
+          "frequency_mhz": 5805,
+          "rssi_dbm": -81,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:1f:45:2c",
+          "ssid": "E-VIT",
+          "channel": 149,
+          "frequency_mhz": 5745,
+          "rssi_dbm": -82,
+          "is_serving": false
+        },
+        {
+          "bssid": "2c:c5:d3:04:43:9c",
+          "ssid": "E-VIT",
+          "channel": 157,
+          "frequency_mhz": 5785,
+          "rssi_dbm": -83,
+          "is_serving": false
+        },
+        {
+          "bssid": "2c:e6:cc:29:28:3c",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -83,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:16:ec",
+          "ssid": "E-VIT",
+          "channel": 64,
+          "frequency_mhz": 5320,
+          "rssi_dbm": -83,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:9b:7c",
+          "ssid": "E-VIT",
+          "channel": 40,
+          "frequency_mhz": 5200,
+          "rssi_dbm": -84,
+          "is_serving": false
+        },
+        {
+          "bssid": "0a:2a:8e:40:41:df",
+          "ssid": "v60",
+          "channel": 149,
+          "frequency_mhz": 5745,
+          "rssi_dbm": -85,
+          "is_serving": false
+        },
+        {
+          "bssid": "20:b5:c6:39:57:88",
+          "ssid": "JioAirfiberA6",
+          "channel": 56,
+          "frequency_mhz": 5280,
+          "rssi_dbm": -89,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:2b:ec",
+          "ssid": "E-VIT",
+          "channel": 44,
+          "frequency_mhz": 5220,
+          "rssi_dbm": -89,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:18:a9:cc",
+          "ssid": "E-VIT",
+          "channel": 60,
+          "frequency_mhz": 5300,
+          "rssi_dbm": -92,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 1,
+            "channel_util_pct": 0.39,
+            "admission_capacity": 0
+          }
+        }
+      ],
+      "device_model": "OnePlus GM1901",
+      "android_sdk": 31
+    },
+    {
+      "uuid": "e37d79e7-f3ec-499e-857a-bf3dc06d093b",
+      "session_uuid": "2d381929-dabd-49a9-83e6-abddf54dc161",
+      "window_label": "evening",
+      "point_label": "A9",
+      "repetition": 1,
+      "taken_at": "2026-10-19T18:04:02+05:30",
+      "is_control": false,
+      "ssid": "E-VIT",
+      "bssid": "f0:b0:52:28:ca:78",
+      "frequency_mhz": 2427,
+      "channel": 4,
+      "band": "2.4",
+      "rssi_dbm": -56,
+      "tx_link_speed_mbps": 144,
+      "rx_link_speed_mbps": 144,
+      "dl_mbps": 9.47908669108669,
+      "ul_mbps": 11.526979966731757,
+      "dl_target_host": "speed.cloudflare.com",
+      "idle_latency_ms": 3.24,
+      "idle_latency_p95_ms": 22.2,
+      "loaded_latency_ms": 601,
+      "recovery_latency_ms": 2.28,
+      "jitter_ms": 9.754,
+      "packet_loss_pct": 0,
+      "gateway_ip": "172.16.64.1",
+      "latency_method": "icmp",
+      "neighbours": [
+        {
+          "bssid": "f0:b0:52:28:ca:78",
+          "ssid": "E-VIT",
+          "channel": 4,
+          "frequency_mhz": 2427,
+          "rssi_dbm": -53,
+          "is_serving": true
+        },
+        {
+          "bssid": "d4:68:4d:18:b2:e8",
+          "ssid": "E-VIT",
+          "channel": 9,
+          "frequency_mhz": 2452,
+          "rssi_dbm": -53,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:15:18",
+          "ssid": "E-VIT",
+          "channel": 10,
+          "frequency_mhz": 2457,
+          "rssi_dbm": -60,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:13:e8",
+          "ssid": "E-VIT",
+          "channel": 12,
+          "frequency_mhz": 2467,
+          "rssi_dbm": -65,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 54,
+            "channel_util_pct": 21.18,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "2c:c5:d3:04:47:c8",
+          "ssid": "E-VIT",
+          "channel": 4,
+          "frequency_mhz": 2427,
+          "rssi_dbm": -66,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 69,
+            "channel_util_pct": 27.06,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:13:f8",
+          "ssid": "E-VIT",
+          "channel": 8,
+          "frequency_mhz": 2447,
+          "rssi_dbm": -69,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 53,
+            "channel_util_pct": 20.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "8c:b6:c5:16:ed:98",
+          "ssid": "JioAirfiberA6",
+          "channel": 36,
+          "frequency_mhz": 5180,
+          "rssi_dbm": -70,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:1b:e8",
+          "ssid": "E-VIT",
+          "channel": 7,
+          "frequency_mhz": 2442,
+          "rssi_dbm": -70,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 66,
+            "channel_util_pct": 25.88,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:15:1c",
+          "ssid": "E-VIT",
+          "channel": 149,
+          "frequency_mhz": 5745,
+          "rssi_dbm": -70,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:16:e8",
+          "ssid": "E-VIT",
+          "channel": 4,
+          "frequency_mhz": 2427,
+          "rssi_dbm": -72,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:be:a8",
+          "ssid": "E-VIT",
+          "channel": 13,
+          "frequency_mhz": 2472,
+          "rssi_dbm": -74,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 2,
+            "channel_util_255": 34,
+            "channel_util_pct": 13.33,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:18:b5:d8",
+          "ssid": "E-VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -74,
+          "is_serving": false
+        },
+        {
+          "bssid": "f0:b0:52:29:30:b8",
+          "ssid": "E-VIT",
+          "channel": 13,
+          "frequency_mhz": 2472,
+          "rssi_dbm": -75,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 42,
+            "channel_util_pct": 16.47,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:20:93:8c",
+          "ssid": "E-VIT",
+          "channel": 157,
+          "frequency_mhz": 5785,
+          "rssi_dbm": -75,
+          "is_serving": false
+        },
+        {
+          "bssid": "20:b5:c6:39:57:88",
+          "ssid": "JioAirfiberA6",
+          "channel": 56,
+          "frequency_mhz": 5280,
+          "rssi_dbm": -76,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:18:b5:dc",
+          "ssid": "E-VIT",
+          "channel": 165,
+          "frequency_mhz": 5825,
+          "rssi_dbm": -76,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:01:dc",
+          "ssid": "E-VIT",
+          "channel": 64,
+          "frequency_mhz": 5320,
+          "rssi_dbm": -77,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 3,
+            "channel_util_255": 11,
+            "channel_util_pct": 4.31,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "f0:b0:52:28:ca:7c",
+          "ssid": "E-VIT",
+          "channel": 157,
+          "frequency_mhz": 5785,
+          "rssi_dbm": -78,
+          "is_serving": false
+        },
+        {
+          "bssid": "2c:c5:d3:04:47:cc",
+          "ssid": "E-VIT",
+          "channel": 44,
+          "frequency_mhz": 5220,
+          "rssi_dbm": -78,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 3,
+            "channel_util_pct": 1.18,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "f0:b0:52:29:25:cc",
+          "ssid": "E-VIT",
+          "channel": 149,
+          "frequency_mhz": 5745,
+          "rssi_dbm": -80,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:be:ac",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -81,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 3,
+            "channel_util_pct": 1.18,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "2c:e6:cc:29:28:3c",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -82,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 1,
+            "channel_util_pct": 0.39,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "84:18:3a:0c:8f:fc",
+          "ssid": "E-VIT",
+          "channel": 40,
+          "frequency_mhz": 5200,
+          "rssi_dbm": -83,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "f0:b0:52:28:c8:6c",
+          "ssid": "E-VIT",
+          "channel": 165,
+          "frequency_mhz": 5825,
+          "rssi_dbm": -84,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:13:ec",
+          "ssid": "E-VIT",
+          "channel": 157,
+          "frequency_mhz": 5785,
+          "rssi_dbm": -85,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 2,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:18:b2:ec",
+          "ssid": "E-VIT",
+          "channel": 60,
+          "frequency_mhz": 5300,
+          "rssi_dbm": -86,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:20:f2:4c",
+          "ssid": "E-VIT",
+          "channel": 44,
+          "frequency_mhz": 5220,
+          "rssi_dbm": -87,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:18:7f:bc",
+          "ssid": "E-VIT",
+          "channel": 44,
+          "frequency_mhz": 5220,
+          "rssi_dbm": -87,
+          "is_serving": false
+        },
+        {
+          "bssid": "f0:b0:52:27:b8:ac",
+          "ssid": "E-VIT",
+          "channel": 36,
+          "frequency_mhz": 5180,
+          "rssi_dbm": -88,
+          "is_serving": false
+        },
+        {
+          "bssid": "c0:c5:20:0e:17:8c",
+          "ssid": "E-VIT",
+          "channel": 48,
+          "frequency_mhz": 5240,
+          "rssi_dbm": -88,
+          "is_serving": false
+        },
+        {
+          "bssid": "c0:c5:20:0e:19:ec",
+          "ssid": "E-VIT",
+          "channel": 161,
+          "frequency_mhz": 5805,
+          "rssi_dbm": -91,
+          "is_serving": false
+        }
+      ],
+      "device_model": "OnePlus GM1901",
+      "android_sdk": 31
+    },
+    {
+      "uuid": "1e4b27e6-5330-430d-abec-7ec8e46070ae",
+      "session_uuid": "2d381929-dabd-49a9-83e6-abddf54dc161",
+      "window_label": "evening",
+      "point_label": "A9",
+      "repetition": 1,
+      "taken_at": "2026-10-19T18:05:19+05:30",
+      "is_control": false,
+      "ssid": "E-VIT",
+      "bssid": "f0:b0:52:28:ca:78",
+      "frequency_mhz": 2427,
+      "channel": 4,
+      "band": "2.4",
+      "rssi_dbm": -59,
+      "tx_link_speed_mbps": 144,
+      "rx_link_speed_mbps": 144,
+      "dl_mbps": 7.504827692071533,
+      "ul_mbps": 7.236740383164881,
+      "dl_target_host": "speed.cloudflare.com",
+      "idle_latency_ms": 4.84,
+      "idle_latency_p95_ms": 39,
+      "loaded_latency_ms": 197,
+      "recovery_latency_ms": 3.14,
+      "jitter_ms": 17.164,
+      "packet_loss_pct": 0,
+      "gateway_ip": "172.16.64.1",
+      "latency_method": "icmp",
+      "neighbours": [
+        {
+          "bssid": "d4:68:4d:19:29:38",
+          "ssid": "E-VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -45,
+          "is_serving": false
+        },
+        {
+          "bssid": "f0:b0:52:28:ca:78",
+          "ssid": "E-VIT",
+          "channel": 4,
+          "frequency_mhz": 2427,
+          "rssi_dbm": -53,
+          "is_serving": true
+        },
+        {
+          "bssid": "d4:68:4d:18:b2:e8",
+          "ssid": "E-VIT",
+          "channel": 9,
+          "frequency_mhz": 2452,
+          "rssi_dbm": -56,
+          "is_serving": false
+        },
+        {
+          "bssid": "2c:c5:d3:04:47:c8",
+          "ssid": "E-VIT",
+          "channel": 4,
+          "frequency_mhz": 2427,
+          "rssi_dbm": -62,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 98,
+            "channel_util_pct": 38.43,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:01:d8",
+          "ssid": "E-VIT",
+          "channel": 2,
+          "frequency_mhz": 2417,
+          "rssi_dbm": -64,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 73,
+            "channel_util_pct": 28.63,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:13:e8",
+          "ssid": "E-VIT",
+          "channel": 12,
+          "frequency_mhz": 2467,
+          "rssi_dbm": -64,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 48,
+            "channel_util_pct": 18.82,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:15:18",
+          "ssid": "E-VIT",
+          "channel": 10,
+          "frequency_mhz": 2457,
+          "rssi_dbm": -67,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:18:b2:ec",
+          "ssid": "E-VIT",
+          "channel": 60,
+          "frequency_mhz": 5300,
+          "rssi_dbm": -68,
+          "is_serving": false
+        },
+        {
+          "bssid": "c0:c5:20:0e:17:88",
+          "ssid": "E-VIT",
+          "channel": 8,
+          "frequency_mhz": 2447,
+          "rssi_dbm": -69,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:18:b5:d8",
+          "ssid": "E-VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -69,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:13:f8",
+          "ssid": "E-VIT",
+          "channel": 8,
+          "frequency_mhz": 2447,
+          "rssi_dbm": -69,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 2,
+            "channel_util_255": 50,
+            "channel_util_pct": 19.61,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "f0:b0:52:29:30:b8",
+          "ssid": "E-VIT",
+          "channel": 13,
+          "frequency_mhz": 2472,
+          "rssi_dbm": -70,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 84,
+            "channel_util_pct": 32.94,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "f0:b0:52:27:b8:a8",
+          "ssid": "E-VIT",
+          "channel": 11,
+          "frequency_mhz": 2462,
+          "rssi_dbm": -70,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:20:93:88",
+          "ssid": "E-VIT",
+          "channel": 2,
+          "frequency_mhz": 2417,
+          "rssi_dbm": -71,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:8f:f8",
+          "ssid": "E-VIT",
+          "channel": 12,
+          "frequency_mhz": 2467,
+          "rssi_dbm": -72,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 129,
+            "channel_util_pct": 50.59,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:15:1c",
+          "ssid": "E-VIT",
+          "channel": 149,
+          "frequency_mhz": 5745,
+          "rssi_dbm": -74,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:1b:e8",
+          "ssid": "E-VIT",
+          "channel": 7,
+          "frequency_mhz": 2442,
+          "rssi_dbm": -75,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 29,
+            "channel_util_pct": 11.37,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:01:dc",
+          "ssid": "E-VIT",
+          "channel": 64,
+          "frequency_mhz": 5320,
+          "rssi_dbm": -76,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 3,
+            "channel_util_255": 3,
+            "channel_util_pct": 1.18,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "84:18:3a:0c:be:a8",
+          "ssid": "E-VIT",
+          "channel": 13,
+          "frequency_mhz": 2472,
+          "rssi_dbm": -77,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 3,
+            "channel_util_255": 124,
+            "channel_util_pct": 48.63,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "2c:c5:d3:04:58:98",
+          "ssid": "E-VIT",
+          "channel": 8,
+          "frequency_mhz": 2447,
+          "rssi_dbm": -77,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:20:f2:48",
+          "ssid": "E-VIT",
+          "channel": 8,
+          "frequency_mhz": 2447,
+          "rssi_dbm": -77,
+          "is_serving": false
+        },
+        {
+          "bssid": "f0:b0:52:28:ca:7c",
+          "ssid": "E-VIT",
+          "channel": 157,
+          "frequency_mhz": 5785,
+          "rssi_dbm": -78,
+          "is_serving": false
+        },
+        {
+          "bssid": "c0:c5:20:0e:19:e8",
+          "ssid": "E-VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -79,
+          "is_serving": false
+        },
+        {
+          "bssid": "20:b5:c6:39:57:88",
+          "ssid": "JioAirfiberA6",
+          "channel": 56,
+          "frequency_mhz": 5280,
+          "rssi_dbm": -80,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:18:b5:dc",
+          "ssid": "E-VIT",
+          "channel": 165,
+          "frequency_mhz": 5825,
+          "rssi_dbm": -80,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:18:7f:b8",
+          "ssid": "E-VIT",
+          "channel": 6,
+          "frequency_mhz": 2437,
+          "rssi_dbm": -80,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:be:ac",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -82,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 3,
+            "channel_util_pct": 1.18,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "f6:ad:1a:ca:57:bc",
+          "ssid": "meee",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -82,
+          "is_serving": false
+        },
+        {
+          "bssid": "2c:c5:d3:04:47:cc",
+          "ssid": "E-VIT",
+          "channel": 44,
+          "frequency_mhz": 5220,
+          "rssi_dbm": -82,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 63,
+            "channel_util_pct": 24.71,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "f0:b0:52:29:25:cc",
+          "ssid": "E-VIT",
+          "channel": 149,
+          "frequency_mhz": 5745,
+          "rssi_dbm": -83,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:20:93:8c",
+          "ssid": "E-VIT",
+          "channel": 157,
+          "frequency_mhz": 5785,
+          "rssi_dbm": -84,
+          "is_serving": false
+        },
+        {
+          "bssid": "f0:b0:52:27:b8:ac",
+          "ssid": "E-VIT",
+          "channel": 36,
+          "frequency_mhz": 5180,
+          "rssi_dbm": -85,
+          "is_serving": false
+        },
+        {
+          "bssid": "2c:e6:cc:29:28:3c",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -85,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 1,
+            "channel_util_pct": 0.39,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "84:18:3a:0c:8f:fc",
+          "ssid": "E-VIT",
+          "channel": 40,
+          "frequency_mhz": 5200,
+          "rssi_dbm": -85,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 4,
+            "channel_util_pct": 1.57,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "c0:c5:20:0e:17:8c",
+          "ssid": "E-VIT",
+          "channel": 48,
+          "frequency_mhz": 5240,
+          "rssi_dbm": -85,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:2a:4c",
+          "ssid": "E-VIT",
+          "channel": 64,
+          "frequency_mhz": 5320,
+          "rssi_dbm": -86,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 3,
+            "channel_util_255": 7,
+            "channel_util_pct": 2.75,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:13:ec",
+          "ssid": "E-VIT",
+          "channel": 157,
+          "frequency_mhz": 5785,
+          "rssi_dbm": -86,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 2,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "c0:c5:20:0e:19:ec",
+          "ssid": "E-VIT",
+          "channel": 161,
+          "frequency_mhz": 5805,
+          "rssi_dbm": -87,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:18:fe:bc",
+          "ssid": "E-VIT",
+          "channel": 52,
+          "frequency_mhz": 5260,
+          "rssi_dbm": -91,
+          "is_serving": false
+        },
+        {
+          "bssid": "2c:c5:d3:04:58:9c",
+          "ssid": "E-VIT",
+          "channel": 60,
+          "frequency_mhz": 5300,
+          "rssi_dbm": -91,
+          "is_serving": false
+        }
+      ],
+      "device_model": "OnePlus GM1901",
+      "android_sdk": 31
+    },
+    {
+      "uuid": "2ce609b1-d545-4799-88e1-b2ca484e7248",
+      "session_uuid": "2d381929-dabd-49a9-83e6-abddf54dc161",
+      "window_label": "evening",
+      "point_label": "C9",
+      "repetition": 1,
+      "taken_at": "2026-10-19T18:06:52+05:30",
+      "is_control": false,
+      "ssid": "E-VIT",
+      "bssid": "2c:c5:d3:04:47:cc",
+      "frequency_mhz": 5220,
+      "channel": 44,
+      "band": "5",
+      "rssi_dbm": -51,
+      "tx_link_speed_mbps": 866,
+      "rx_link_speed_mbps": 866,
+      "dl_mbps": 19.048312013433062,
+      "ul_mbps": 12.03693480615118,
+      "dl_target_host": "speed.cloudflare.com",
+      "idle_latency_ms": 3.32,
+      "idle_latency_p95_ms": 61,
+      "loaded_latency_ms": 27.6,
+      "recovery_latency_ms": 2.35,
+      "jitter_ms": 22.617,
+      "packet_loss_pct": 0,
+      "gateway_ip": "172.16.64.1",
+      "latency_method": "icmp",
+      "bss_load_pre": {
+        "station_count": 1,
+        "channel_util_255": 7,
+        "channel_util_pct": 2.75,
+        "admission_capacity": 0
+      },
+      "bss_load_post": {
+        "station_count": 2,
+        "channel_util_255": 12,
+        "channel_util_pct": 4.71,
+        "admission_capacity": 0
+      },
+      "neighbours": [
+        {
+          "bssid": "d4:68:4d:19:29:38",
+          "ssid": "E-VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -48,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:18:b2:e8",
+          "ssid": "E-VIT",
+          "channel": 13,
+          "frequency_mhz": 2472,
+          "rssi_dbm": -59,
+          "is_serving": false
+        },
+        {
+          "bssid": "f0:b0:52:28:ca:78",
+          "ssid": "E-VIT",
+          "channel": 4,
+          "frequency_mhz": 2427,
+          "rssi_dbm": -61,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:13:e8",
+          "ssid": "E-VIT",
+          "channel": 7,
+          "frequency_mhz": 2442,
+          "rssi_dbm": -61,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 2,
+            "channel_util_255": 109,
+            "channel_util_pct": 42.75,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:01:d8",
+          "ssid": "E-VIT",
+          "channel": 2,
+          "frequency_mhz": 2417,
+          "rssi_dbm": -65,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 2,
+            "channel_util_255": 83,
+            "channel_util_pct": 32.55,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:18:b2:ec",
+          "ssid": "E-VIT",
+          "channel": 60,
+          "frequency_mhz": 5300,
+          "rssi_dbm": -66,
+          "is_serving": false
+        },
+        {
+          "bssid": "2c:c5:d3:04:47:c8",
+          "ssid": "E-VIT",
+          "channel": 4,
+          "frequency_mhz": 2427,
+          "rssi_dbm": -66,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 63,
+            "channel_util_pct": 24.71,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "84:18:3a:0c:be:a8",
+          "ssid": "E-VIT",
+          "channel": 13,
+          "frequency_mhz": 2472,
+          "rssi_dbm": -70,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 26,
+            "channel_util_pct": 10.2,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "f0:b0:52:27:b8:a8",
+          "ssid": "E-VIT",
+          "channel": 11,
+          "frequency_mhz": 2462,
+          "rssi_dbm": -71,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:15:18",
+          "ssid": "E-VIT",
+          "channel": 10,
+          "frequency_mhz": 2457,
+          "rssi_dbm": -72,
+          "is_serving": false
+        },
+        {
+          "bssid": "8c:b6:c5:16:ed:98",
+          "ssid": "JioAirfiberA6",
+          "channel": 36,
+          "frequency_mhz": 5180,
+          "rssi_dbm": -72,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:18:b5:d8",
+          "ssid": "E-VIT",
+          "channel": 1,
+          "frequency_mhz": 2412,
+          "rssi_dbm": -72,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:16:e8",
+          "ssid": "E-VIT",
+          "channel": 4,
+          "frequency_mhz": 2427,
+          "rssi_dbm": -73,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:15:1c",
+          "ssid": "E-VIT",
+          "channel": 149,
+          "frequency_mhz": 5745,
+          "rssi_dbm": -75,
+          "is_serving": false
+        },
+        {
+          "bssid": "20:b5:c6:39:57:88",
+          "ssid": "JioAirfiberA6",
+          "channel": 56,
+          "frequency_mhz": 5280,
+          "rssi_dbm": -76,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:01:dc",
+          "ssid": "E-VIT",
+          "channel": 64,
+          "frequency_mhz": 5320,
+          "rssi_dbm": -77,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 2,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:20:93:88",
+          "ssid": "E-VIT",
+          "channel": 2,
+          "frequency_mhz": 2417,
+          "rssi_dbm": -78,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:8f:f8",
+          "ssid": "E-VIT",
+          "channel": 12,
+          "frequency_mhz": 2467,
+          "rssi_dbm": -78,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 129,
+            "channel_util_pct": 50.59,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:1b:e8",
+          "ssid": "E-VIT",
+          "channel": 7,
+          "frequency_mhz": 2442,
+          "rssi_dbm": -78,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 73,
+            "channel_util_pct": 28.63,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:18:b5:dc",
+          "ssid": "E-VIT",
+          "channel": 165,
+          "frequency_mhz": 5825,
+          "rssi_dbm": -78,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:13:fc",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -79,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:20:93:8c",
+          "ssid": "E-VIT",
+          "channel": 157,
+          "frequency_mhz": 5785,
+          "rssi_dbm": -80,
+          "is_serving": false
+        },
+        {
+          "bssid": "f0:b0:52:29:25:cc",
+          "ssid": "E-VIT",
+          "channel": 149,
+          "frequency_mhz": 5745,
+          "rssi_dbm": -80,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:13:ec",
+          "ssid": "E-VIT",
+          "channel": 157,
+          "frequency_mhz": 5785,
+          "rssi_dbm": -81,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 2,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "2c:c5:d3:04:47:cc",
+          "ssid": "E-VIT",
+          "channel": 44,
+          "frequency_mhz": 5220,
+          "rssi_dbm": -82,
+          "is_serving": true,
+          "bss_load": {
+            "station_count": 1,
+            "channel_util_255": 7,
+            "channel_util_pct": 2.75,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:19:2a:4c",
+          "ssid": "E-VIT",
+          "channel": 64,
+          "frequency_mhz": 5320,
+          "rssi_dbm": -83,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 3,
+            "channel_util_255": 3,
+            "channel_util_pct": 1.18,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "f0:b0:52:28:c8:6c",
+          "ssid": "E-VIT",
+          "channel": 165,
+          "frequency_mhz": 5825,
+          "rssi_dbm": -83,
+          "is_serving": false
+        },
+        {
+          "bssid": "c0:c5:20:0e:17:8c",
+          "ssid": "E-VIT",
+          "channel": 48,
+          "frequency_mhz": 5240,
+          "rssi_dbm": -83,
+          "is_serving": false
+        },
+        {
+          "bssid": "f0:b0:52:27:b8:ac",
+          "ssid": "E-VIT",
+          "channel": 36,
+          "frequency_mhz": 5180,
+          "rssi_dbm": -85,
+          "is_serving": false
+        },
+        {
+          "bssid": "84:18:3a:0c:be:ac",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -86,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "f0:b0:52:29:30:bc",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -86,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "84:18:3a:0c:8f:fc",
+          "ssid": "E-VIT",
+          "channel": 40,
+          "frequency_mhz": 5200,
+          "rssi_dbm": -86,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "2c:e6:cc:29:28:3c",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -87,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 2,
+            "channel_util_pct": 0.78,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:18:7f:bc",
+          "ssid": "E-VIT",
+          "channel": 44,
+          "frequency_mhz": 5220,
+          "rssi_dbm": -87,
+          "is_serving": false
+        },
+        {
+          "bssid": "d4:68:4d:19:1b:ec",
+          "ssid": "E-VIT",
+          "channel": 169,
+          "frequency_mhz": 5845,
+          "rssi_dbm": -88,
+          "is_serving": false,
+          "bss_load": {
+            "station_count": 0,
+            "channel_util_255": 5,
+            "channel_util_pct": 1.96,
+            "admission_capacity": 0
+          }
+        },
+        {
+          "bssid": "d4:68:4d:18:fe:bc",
+          "ssid": "E-VIT",
+          "channel": 52,
+          "frequency_mhz": 5260,
+          "rssi_dbm": -92,
+          "is_serving": false
+        }
+      ],
+      "device_model": "OnePlus GM1901",
+      "android_sdk": 31
+    }
+  ]
+}

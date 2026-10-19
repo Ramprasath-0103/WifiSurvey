@@ -1,0 +1,5 @@
+# Our Postgres runs on 5433 because something else already owns 5432 on this Mac.
+# Source this before any psql / python work:   source .pgenv
+export PGPORT=5433
+export PGHOST=/tmp
+export PGDATABASE=wifi_survey

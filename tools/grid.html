@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Survey Grid — Phase 1</title>
+<style>
+  :root{
+    --bg:#faf9f7; --panel:#fff; --ink:#191917; --muted:#75736d;
+    --line:#e4e2dc; --line2:#f0eeE9; --accent:#8a4b26; --ctrl:#1b6b47;
+    --danger:#a3352b; --cell:#fff; --cellhov:#f4f1ea;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{margin:0;background:var(--bg);color:var(--ink);
+       font:14px/1.55 ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+       -webkit-font-smoothing:antialiased}
+  header{background:var(--panel);border-bottom:1px solid var(--line);
+         padding:12px 22px;display:flex;gap:20px;align-items:flex-end;flex-wrap:wrap}
+  h1{margin:0;font-size:15px;font-weight:640;letter-spacing:-.012em;align-self:center}
+  h1 span{color:var(--muted);font-weight:420;margin-left:8px}
+  label{font-size:11px;color:var(--muted);display:flex;flex-direction:column;gap:3px;
+        letter-spacing:.04em;text-transform:uppercase}
+  input,select{font:inherit;font-size:13px;padding:5px 8px;border:1px solid var(--line);
+               border-radius:6px;background:#fff;color:var(--ink);text-transform:none;letter-spacing:0}
+  input[type=number]{width:64px}
+  .btn{font:inherit;font-size:13px;padding:6px 11px;border:1px solid var(--line);border-radius:6px;
+       background:#fff;cursor:pointer;color:var(--ink)}
+  .btn:hover{background:#f2f0ea}
+  .btn.primary{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .btn.primary:hover{opacity:.87}
+  .btn.ghost{border-color:transparent;color:var(--muted)}
+  .btn.ghost:hover{color:var(--danger);background:#fbf2f1}
+
+  main{display:grid;grid-template-columns:minmax(0,1fr) 340px;height:calc(100vh - 58px)}
+  #gridpane{overflow:auto;padding:26px 30px}
+  table.grid{border-collapse:separate;border-spacing:0}
+  table.grid th{font-size:11px;font-weight:560;color:var(--muted);padding:0 0 7px;
+                text-align:center;letter-spacing:.05em}
+  table.grid th.rh{padding:0 10px 0 0;text-align:right;vertical-align:middle}
+  td.cell{width:52px;height:52px;padding:0;border:1px solid var(--line2);background:var(--cell);
+          cursor:pointer;position:relative;transition:background .09s}
+  td.cell:hover{background:var(--cellhov)}
+  td.cell.on{background:var(--accent);border-color:var(--accent)}
+  td.cell.on.ctl{background:var(--ctrl);border-color:var(--ctrl)}
+  td.cell.on .lab{color:#fff}
+  td.cell.sel{outline:2.5px solid #d99a2b;outline-offset:-2px;z-index:2}
+  .lab{font-size:11px;font-weight:640;color:transparent;display:flex;
+       align-items:center;justify-content:center;height:100%;letter-spacing:-.01em}
+  .legend{margin-top:20px;font-size:12px;color:var(--muted);display:flex;gap:18px;flex-wrap:wrap}
+  .sw{display:inline-block;width:11px;height:11px;border-radius:3px;vertical-align:-1px;margin-right:5px}
+
+  aside{background:var(--panel);border-left:1px solid var(--line);overflow:auto;padding:20px}
+  .status{font-size:12.5px;line-height:1.75;margin-bottom:16px;padding:11px 13px;
+          background:#f7f6f2;border:1px solid var(--line);border-radius:7px}
+  .ok{color:var(--ctrl)} .warn{color:var(--danger)}
+  .sechead{font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);
+           margin:18px 0 8px;font-weight:600}
+  .fld{margin-bottom:10px}
+  .fld label{margin-bottom:3px}
+  .fld input,.fld select{width:100%;font-size:13px}
+  .empty{color:var(--muted);font-size:13px;padding:14px 0}
+  table.list{width:100%;border-collapse:collapse;font-size:12.5px}
+  table.list td{padding:4px 3px;border-bottom:1px solid var(--line2)}
+  table.list tr{cursor:pointer}
+  table.list tr:hover td{background:#faf9f6}
+  table.list tr.sel td{background:#fdf7ec}
+  .pl{color:var(--muted)}
+  .row{display:flex;gap:7px;margin-top:16px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Survey Grid <span>Phase 1 — reference points</span></h1>
+  <label>Rows<input type="number" id="nrows" value="6" min="1" max="26"></label>
+  <label>Columns<input type="number" id="ncols" value="10" min="1" max="30"></label>
+</header>
+
+<main>
+  <div id="gridpane">
+    <div id="grid"></div>
+    <div class="legend">
+      <span><span class="sw" style="background:var(--accent)"></span>reference point</span>
+      <span><span class="sw" style="background:var(--ctrl)"></span>control point (Plan §4.3)</span>
+      <span>click a cell to place · click again to select · shown label is what the app displays</span>
+    </div>
+  </div>
+
+  <aside>
+    <div class="status" id="status"></div>
+
+    <div id="editor"></div>
+
+    <div class="sechead">Points</div>
+    <table class="list"><tbody id="list"></tbody></table>
+
+    <div class="row">
+      <button class="btn primary" id="expJson">Export JSON</button>
+      <button class="btn" id="impJson">Load JSON</button>
+      <button class="btn ghost" id="clearAll">Clear all</button>
+    </div>
+    <input type="file" id="jsonFile" accept=".json" hidden>
+  </aside>
+</main>
+
+<script>
+const TYPES = ["corridor","stairwell","lift_lobby","room_entrance","open_area"];
+const ROWL  = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const CELL  = 80;               // px per grid step, used to derive render coords
+const $ = id => document.getElementById(id);
+
+let state = {
+  nrows: 6, ncols: 10,
+  points: [],            // {label,grid_row,grid_col,place_name,location_type,is_control}
+  sel: null              // index into points
+};
+
+/* ---------- persistence ---------- */
+// Storage can be unavailable (private windows, data: URLs, blocked site data).
+// The tool must keep working without it - only the autosave is lost.
+let storageWarned = false;
+function save(){
+  try{ localStorage.setItem("surveygrid.v2", JSON.stringify(state)); }
+  catch(e){
+    if(!storageWarned){
+      storageWarned = true;
+      const el = document.getElementById("status");
+      if(el) el.insertAdjacentHTML("beforeend",
+        '<br><span class="warn">note: autosave unavailable here — use Export JSON before closing</span>');
+    }
+  }
+}
+function restore(){
+  try{
+    const d = JSON.parse(localStorage.getItem("surveygrid.v2") || "null");
+    if(d && Array.isArray(d.points)) state = Object.assign(state, d);
+  }catch(e){}
+}
+
+/* ---------- helpers ---------- */
+const at    = (r,c) => state.points.find(p => p.grid_row===r && p.grid_col===c);
+const idxAt = (r,c) => state.points.findIndex(p => p.grid_row===r && p.grid_col===c);
+
+/* ---------- rendering ---------- */
+function drawGrid(){
+  const rows = +state.nrows, cols = +state.ncols;
+  let h = "<table class='grid'><thead><tr><th class='rh'></th>";
+  for(let c=1;c<=cols;c++) h += `<th>${c}</th>`;
+  h += "</tr></thead><tbody>";
+  for(let r=0;r<rows;r++){
+    const R = ROWL[r];
+    h += `<tr><th class='rh'>${R}</th>`;
+    for(let c=1;c<=cols;c++){
+      const p = at(R,c);
+      const i = idxAt(R,c);
+      const cls = ["cell"];
+      if(p) cls.push("on");
+      if(p && p.is_control) cls.push("ctl");
+      if(state.sel!==null && i===state.sel) cls.push("sel");
+      h += `<td class="${cls.join(' ')}" data-r="${R}" data-c="${c}"
+              title="${p ? p.label+(p.place_name?' — '+p.place_name:'') : R+c}">
+              <div class="lab">${p ? p.label : ""}</div></td>`;
+    }
+    h += "</tr>";
+  }
+  $("grid").innerHTML = h + "</tbody></table>";
+  $("grid").querySelectorAll("td.cell").forEach(td=>{
+    td.onclick = () => cellClick(td.dataset.r, +td.dataset.c);
+  });
+}
+
+function cellClick(r,c){
+  const i = idxAt(r,c);
+  if(i === -1){
+    state.points.push({
+      label: r + c,
+      grid_row: r, grid_col: c, place_name: "",
+      location_type: "corridor",
+      is_control: state.points.length === 0
+    });
+    state.sel = state.points.length - 1;
+  } else {
+    state.sel = (state.sel === i) ? null : i;
+  }
+  save(); render();
+}
+
+function drawEditor(){
+  const box = $("editor");
+  if(state.sel === null || !state.points[state.sel]){
+    box.innerHTML = `<div class="sechead">Selected point</div>
+                     <div class="empty">Click a cell in the grid to place or select a point.</div>`;
+    return;
+  }
+  const p = state.points[state.sel];
+  box.innerHTML = `
+    <div class="sechead">Selected — cell ${p.grid_row}${p.grid_col}</div>
+    <div class="fld"><label>Label</label><input id="e_label" value="${p.label}"></div>
+    <div class="fld"><label>Place name</label>
+      <input id="e_place" value="${p.place_name||""}" placeholder="corridor outside Lab 101"></div>
+    <div class="fld"><label>Location type</label><select id="e_type">
+      ${TYPES.map(t=>`<option ${t===p.location_type?"selected":""}>${t}</option>`).join("")}
+    </select></div>
+    <div class="fld"><label style="flex-direction:row;align-items:center;gap:7px;text-transform:none;font-size:13px;color:var(--ink)">
+      <input type="checkbox" id="e_ctl" ${p.is_control?"checked":""} style="width:auto">
+      Control point — measured first, every session</label></div>
+    <button class="btn ghost" id="e_del">Remove this point</button>`;
+
+  $("e_label").onchange = e => { p.label = e.target.value.trim(); save(); render(); };
+  $("e_place").onchange = e => { p.place_name = e.target.value; save(); render(); };
+  $("e_type").onchange  = e => { p.location_type = e.target.value; save(); render(); };
+  $("e_ctl").onchange   = e => {
+    if(e.target.checked) state.points.forEach(q => q.is_control = false);
+    p.is_control = e.target.checked; save(); render();
+  };
+  $("e_del").onclick = () => { state.points.splice(state.sel,1); state.sel=null; save(); render(); };
+}
+
+function drawList(){
+  const pts = state.points;
+  if(!pts.length){ $("list").innerHTML = `<tr><td class="empty">No points yet.</td></tr>`; return; }
+  $("list").innerHTML = pts.map(p=>{
+    const i = state.points.indexOf(p);
+    return `<tr class="${i===state.sel?'sel':''}" data-i="${i}">
+      <td style="width:52px"><b>${p.label}</b></td>
+      <td>${p.place_name ? p.place_name : `<span class="pl">${p.location_type}</span>`}</td>
+      <td style="width:20px;text-align:right">${p.is_control?'<span class="ok">●</span>':''}</td></tr>`;
+  }).join("");
+  $("list").querySelectorAll("tr[data-i]").forEach(tr=>{
+    tr.onclick = () => { state.sel = +tr.dataset.i; save(); render(); };
+  });
+}
+
+function drawStatus(){
+  const n = state.points.length;
+  const labels = state.points.map(p=>p.label);
+  const dup = [...new Set(labels.filter((l,i)=>labels.indexOf(l)!==i))];
+  const ctl = state.points.filter(p=>p.is_control);
+  const blank = state.points.filter(p=>!p.label).length;
+
+  const line = (ok,text) => `<span class="${ok?'ok':'warn'}">${ok?'✓':'✗'}</span> ${text}`;
+  $("status").innerHTML = [
+    line(n>=25 && n<=30, `<b>${n}</b> points total — plan asks for 25–30`),
+    line(ctl.length===1, ctl.length===1 ? `control point set (${ctl[0].label})`
+                                        : `${ctl.length} control points — need exactly 1`),
+    line(!dup.length && !blank, dup.length ? `duplicate labels: ${dup.join(", ")}`
+                                : blank ? `${blank} point(s) with no label` : `labels unique`)
+  ].join("<br>");
+}
+
+function render(){ drawGrid(); drawEditor(); drawList(); drawStatus(); }
+
+/* ---------- header controls ---------- */
+$("nrows").onchange = e => { state.nrows = +e.target.value; save(); render(); };
+$("ncols").onchange = e => { state.ncols = +e.target.value; save(); render(); };
+$("clearAll").onclick = () => {
+  if(!confirm("Remove all points?")) return;
+  state.points = []; state.sel = null; save(); render();
+};
+
+/* ---------- export / import ---------- */
+$("expJson").onclick = () => {
+  const doc = {
+    grid: {rows:+state.nrows, cols:+state.ncols, cell_px:CELL},
+    generated_by: "tools/grid.html",
+    points: state.points.map(p => ({
+      label: p.label, grid_row: p.grid_row, grid_col: p.grid_col,
+      place_name: p.place_name || null,
+      location_type: p.location_type, is_control: !!p.is_control
+    }))
+  };
+  const b = new Blob([JSON.stringify(doc,null,2)],{type:"application/json"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(b); a.download = "reference_points.json"; a.click();
+  URL.revokeObjectURL(a.href);
+};
+$("impJson").onclick = () => $("jsonFile").click();
+$("jsonFile").onchange = e => {
+  const f = e.target.files[0]; if(!f) return;
+  const rd = new FileReader();
+  rd.onload = () => {
+    try{
+      const d = JSON.parse(rd.result);
+      state.points = d.points || [];
+      if(d.grid){ state.nrows = d.grid.rows; state.ncols = d.grid.cols; }
+      state.sel = null;
+      $("nrows").value = state.nrows; $("ncols").value = state.ncols;
+      save(); render();
+    }catch(err){ alert("Could not read that JSON file."); }
+  };
+  rd.readAsText(f);
+};
+
+restore();
+$("nrows").value = state.nrows;
+$("ncols").value = state.ncols;
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,226 @@
+{
+  "grid": {
+    "rows": 6,
+    "cols": 10,
+    "cell_px": 80
+  },
+  "generated_by": "placeholder - replace via tools/grid.html after the Week 1 walk-through",
+  "points": [
+    {
+      "label": "A1",
+      "grid_row": "A",
+      "grid_col": 1,
+      "place_name": "north-west stairwell",
+      "location_type": "stairwell",
+      "is_control": false
+    },
+    {
+      "label": "A3",
+      "grid_row": "A",
+      "grid_col": 3,
+      "place_name": "outside Lab 101",
+      "location_type": "room_entrance",
+      "is_control": false
+    },
+    {
+      "label": "A5",
+      "grid_row": "A",
+      "grid_col": 5,
+      "place_name": "outside Lab 102",
+      "location_type": "room_entrance",
+      "is_control": false
+    },
+    {
+      "label": "A7",
+      "grid_row": "A",
+      "grid_col": 7,
+      "place_name": "outside Class 103",
+      "location_type": "room_entrance",
+      "is_control": false
+    },
+    {
+      "label": "A9",
+      "grid_row": "A",
+      "grid_col": 9,
+      "place_name": "outside Class 104",
+      "location_type": "room_entrance",
+      "is_control": false
+    },
+    {
+      "label": "B2",
+      "grid_row": "B",
+      "grid_col": 2,
+      "place_name": "north bay",
+      "location_type": "corridor",
+      "is_control": false
+    },
+    {
+      "label": "B6",
+      "grid_row": "B",
+      "grid_col": 6,
+      "place_name": "north bay mid",
+      "location_type": "corridor",
+      "is_control": false
+    },
+    {
+      "label": "B10",
+      "grid_row": "B",
+      "grid_col": 10,
+      "place_name": "north-east stairwell",
+      "location_type": "stairwell",
+      "is_control": false
+    },
+    {
+      "label": "C1",
+      "grid_row": "C",
+      "grid_col": 1,
+      "place_name": "corridor west end",
+      "location_type": "corridor",
+      "is_control": false
+    },
+    {
+      "label": "C2",
+      "grid_row": "C",
+      "grid_col": 2,
+      "place_name": "corridor",
+      "location_type": "corridor",
+      "is_control": false
+    },
+    {
+      "label": "C3",
+      "grid_row": "C",
+      "grid_col": 3,
+      "place_name": "corridor",
+      "location_type": "corridor",
+      "is_control": false
+    },
+    {
+      "label": "C4",
+      "grid_row": "C",
+      "grid_col": 4,
+      "place_name": "corridor",
+      "location_type": "corridor",
+      "is_control": false
+    },
+    {
+      "label": "C5",
+      "grid_row": "C",
+      "grid_col": 5,
+      "place_name": "corridor centre",
+      "location_type": "corridor",
+      "is_control": true
+    },
+    {
+      "label": "C6",
+      "grid_row": "C",
+      "grid_col": 6,
+      "place_name": "corridor",
+      "location_type": "corridor",
+      "is_control": false
+    },
+    {
+      "label": "C7",
+      "grid_row": "C",
+      "grid_col": 7,
+      "place_name": "corridor",
+      "location_type": "corridor",
+      "is_control": false
+    },
+    {
+      "label": "C8",
+      "grid_row": "C",
+      "grid_col": 8,
+      "place_name": "corridor",
+      "location_type": "corridor",
+      "is_control": false
+    },
+    {
+      "label": "C9",
+      "grid_row": "C",
+      "grid_col": 9,
+      "place_name": "corridor",
+      "location_type": "corridor",
+      "is_control": false
+    },
+    {
+      "label": "C10",
+      "grid_row": "C",
+      "grid_col": 10,
+      "place_name": "corridor east end",
+      "location_type": "corridor",
+      "is_control": false
+    },
+    {
+      "label": "D2",
+      "grid_row": "D",
+      "grid_col": 2,
+      "place_name": "lift lobby",
+      "location_type": "lift_lobby",
+      "is_control": false
+    },
+    {
+      "label": "D5",
+      "grid_row": "D",
+      "grid_col": 5,
+      "place_name": "study area",
+      "location_type": "open_area",
+      "is_control": false
+    },
+    {
+      "label": "D8",
+      "grid_row": "D",
+      "grid_col": 8,
+      "place_name": "south bay",
+      "location_type": "corridor",
+      "is_control": false
+    },
+    {
+      "label": "E1",
+      "grid_row": "E",
+      "grid_col": 1,
+      "place_name": "south-west stairwell",
+      "location_type": "stairwell",
+      "is_control": false
+    },
+    {
+      "label": "E3",
+      "grid_row": "E",
+      "grid_col": 3,
+      "place_name": "outside Seminar Hall",
+      "location_type": "room_entrance",
+      "is_control": false
+    },
+    {
+      "label": "E6",
+      "grid_row": "E",
+      "grid_col": 6,
+      "place_name": "outside Staff Room",
+      "location_type": "room_entrance",
+      "is_control": false
+    },
+    {
+      "label": "E8",
+      "grid_row": "E",
+      "grid_col": 8,
+      "place_name": "south open area",
+      "location_type": "open_area",
+      "is_control": false
+    },
+    {
+      "label": "E10",
+      "grid_row": "E",
+      "grid_col": 10,
+      "place_name": "east open area",
+      "location_type": "open_area",
+      "is_control": false
+    },
+    {
+      "label": "F5",
+      "grid_row": "F",
+      "grid_col": 5,
+      "place_name": "outside Washroom",
+      "location_type": "room_entrance",
+      "is_control": false
+    }
+  ]
+}
